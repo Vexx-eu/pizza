@@ -22,55 +22,8 @@ let pizzy = [
     },
 ];
 
-let menu = document.querySelector("#menu");
-let counter = 0;
 
-displayPage(counter);
-
-function displayPage(startIndex) {
-    let endIndex = startIndex + 3;
-    for(let i = startIndex; i < endIndex; i++) {
-        if (i >= pizzy.length) break;
-        let pizza = pizzy[i];
-        
-        let article = document.createElement("article");
-        article.classList.add("produkt");
-
-        let img = document.createElement("img");
-        img.src = pizza.image;
-
-        let nameDiv = document.createElement("div");
-        nameDiv.classList.add("nazev");
-
-        let name = document.createElement("h2");
-        name.textContent = pizza.name;
-
-        let price = document.createElement("p");
-        price.textContent = pizza.price;
-
-        let description = document.createElement("p");
-        description.textContent = pizza.description;
-
-        let buy = document.createElement("a");
-        buy.href = "kosik.html";
-        buy.classList.add("buy");
-        buy.textContent = pizza.buy;
-
-        nameDiv.append(name);
-        nameDiv.append(price);
-        article.append(img);
-        article.append(nameDiv);
-        article.append(description);
-        article.append(buy);
-        menu.append(article);
-    }
-}
-
-
-
-/*
-
-let napoj = [
+let napoje = [
     {
         "name": "Coca-cola",
         "price": "79 Kč",
@@ -92,43 +45,53 @@ let napoj = [
 
 ];
 
-let piti = document.querySelector("#menu");
-let kounter = 0;
 
-displayPage(kounter);
 
-function displayPage(startIndex) {
+displayPage(0, pizzy, "#food");
+displayPage(0, napoje, "#drinks");
+
+function displayPage(startIndex, poleProduktu, parent) {
+
+    let parentElement = document.querySelector(parent);     
     let endIndex = startIndex + 3;
     for(let i = startIndex; i < endIndex; i++) {
-        if (i >= napoj.length) break;
-        let Piticka = napoj[i];
+        if (i >= poleProduktu.length) break;
+        let produkt = poleProduktu[i];
+        
+        let article = document.createElement("article");
+        article.classList.add("produkt");
 
-        let odstavec = document.createElement("article");
-        odstavec.classList.add("produkt");
+        let img = document.createElement("img");
+        img.src = produkt.image;
 
-        let obr = document.createElement("img");
-        obr.src = Piticka.image;
+        let nameDiv = document.createElement("div");
+        nameDiv.classList.add("nazev");
 
-        let nazDiv = document.createElement("div");
-        nazDiv.classList.add("nazev");
+        let name = document.createElement("h2");
+        name.textContent = produkt.name;
 
-        let jmeno = document.createElement("h2");
-        jmeno.textContent = Piticka.name; 
+        let price = document.createElement("p");
+        price.textContent = produkt.price;
 
-        let cena = document.createElement("p");
-        cena.textContent = Piticka.price; 
+        let description = document.createElement("p");
+        description.textContent = produkt.description;
 
-        let koupit = document.createElement("a");
-        koupit.href = "kosik.html";
-        koupit.classList.add("buy");
-        koupit.textContent = Piticka.buy; 
+        let buy = document.createElement("a");
+        buy.href = "kosik.html";
+        buy.classList.add("buy");
+        buy.textContent = produkt.buy;
 
-        nazDiv.append(jmeno);
-        nazDiv.append(cena);
-        odstavec.append(obr);
-        odstavec.append(nazDiv);
-        odstavec.append(koupit);
-        piti.append(odstavec);
+        nameDiv.append(name);
+        nameDiv.append(price);
+        article.append(img);
+        article.append(nameDiv);
+        article.append(description);
+        article.append(buy);
+        parentElement.append(article);
     }
 }
-*/
+
+
+
+
+
