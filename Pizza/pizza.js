@@ -27,18 +27,21 @@ let napoje = [
     {
         "name": "Coca-cola",
         "price": "79 Kč",
-        "image": "img/cola.png",
+        "description": "Coca-cola 1.5L",
+        "image": "img/cola.jpg",
         "buy": "Koupit"
     },
     {
         "name": "Fanta",
         "price": "59 Kč",
-        "image": "img/fanta.webp",
+        "description": "Fanta 1.5L",
+        "image": "img/fanta.jpg",
         "buy": "Koupit"
     },
     {
         "name": "Domácí Limonáda",
         "price": "69 Kč",
+        "description": "Domácí limonáda 0.75L",
         "image": "img/limonada.jpg",
         "buy": "Koupit"
     },
@@ -77,7 +80,7 @@ function displayPage(startIndex, poleProduktu, parent) {
         description.textContent = produkt.description;
 
         let buy = document.createElement("a");
-        buy.href = "kosik.html";
+        buy.href = "#kosik";
         buy.classList.add("buy");
         buy.textContent = produkt.buy;
 
