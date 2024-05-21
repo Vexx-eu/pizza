@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Studio</title>
     <link rel="stylesheet" href="style.css">
     <script src="pizza.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Ashopping_bag%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024">
+    <link rel="stylesheet"
+        href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Ashopping_bag%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
                 <img src="img/logo2.png" alt="" style="width: 100px;" hre></a>
-                </div>
+            </div>
             <div class="navigace">
                 <a href="#" style="color: #ff0000;">MENU</a>
                 <a href="#">RESTAURACE</a>
@@ -22,35 +25,88 @@
             <div>
                 <button class="button register">Registrovat</button>
                 <button class="button login">Přihlásit se</button>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path
+                        d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
+                </svg>
             </div>
 
-            </nav>
-        </header>
-        <div class="underline"></div>
+        </nav>
+    </header>
+    <div class="underline"></div>
 
 
-        <section class="top">
-            <article class="uvodni">
-                <h1>Dopřejte si dokonalý zážitek z naší pizzy!</h1>
-                <p>Čerstvé suroviny, tradiční receptury a láska k pečení – to vše najdete v každém kousku naší pizzy. Užijte si harmonii chutí s rajčatovou omáčkou, jemnou mozzarellou, pikantním pepperoni, černými olivami a čerstvou rukolou.</p>
-            </article>
-            <article class="img1">
-                <img src="img/pizza.jpg" alt="">
-            </article>
-         </section>
-         <div class="underline"></div>
-         </section>
+    <section class="top">
+        <article class="uvodni">
+            <h1>Dopřejte si dokonalý zážitek z naší pizzy!</h1>
+            <p>Čerstvé suroviny, tradiční receptury a láska k pečení – to vše najdete v každém kousku naší pizzy. Užijte
+                si harmonii chutí s rajčatovou omáčkou, jemnou mozzarellou, pikantním pepperoni, černými olivami a
+                čerstvou rukolou.</p>
+        </article>
+        <article class="img1">
+            <img src="img/pizza.jpg" alt="">
+        </article>
+    </section>
+    <div class="underline"></div>
+    </section>
 
 
 
 
-         <section id="food" class="menu">
-        </section>
-        <section id="drinks" class="menu">
-        </section>
-        
+    <section id="food" class="menu">
+    </section>
+    <section id="drinks" class="menu">
+    </section>
+
+    <section id="kosik" class="kosik">
+        <article class="soupis">
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Popis</th>
+                    <th>Cena</th>
+                    <th>Množství</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/margherita.png">
+                        <td>Margherita</td>
+                    <td>149 Kč</td>
+                    <td><&nbsp;1&nbsp;></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/fanta.webp">
+                        <td>Fanta</td></td>
+                    <td>69 Kč</td>
+                    <td><&nbsp;2&nbsp;></td>
+                </tr>
+            </table>
+        </article>
+
+        <article class="list">
+            <h2>Košík</h2>
+            <div class="total">
+                <div>
+                    <p>Zboží celkem</p>
+                    <p>218 Kč</p>
+                </div>
+                <div>
+                    <p>Doprava</p>
+                    <p>120 Kč</p>
+                </div>
+                <div>
+                    <p>Celkem</p>
+                    <p>338 Kč</p>
+                </div>
+            </div>
+            <a href="" class="zaplat">Zaplatit</a>
+        </article>
+    </section>
+
 
 
 </body>
+
 </html>

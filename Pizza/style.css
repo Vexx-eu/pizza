@@ -187,3 +187,74 @@ p {
 }
 
 
+
+
+.kosik {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+th, td {
+    border-bottom: 1px solid rgb(87, 87, 87);
+    height: 80px;
+    width: 120px;
+    padding: 10px 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+td img {
+    width: 80px;
+}
+
+.list {
+    border-radius: 5px;
+    border: 1px solid rgb(87, 87, 87);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.total {
+    padding: 20px 0px;
+    border-top: 1px solid rgb(87, 87, 87);
+    border-bottom:  1px solid rgb(0, 0, 0);
+}
+.total div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total div:nth-of-type(2) {
+    margin: 20px 0px;
+}
+
+.list a {
+    width: 200px;
+    margin: 20px 0px 0px 0px;
+    align-self: center;
+}
+.list h2 {
+    margin: 0px 0px 20px 0px;
+}
+
+.zaplat{
+    background-color: #fab100;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    margin: 10px 0px 0px 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
