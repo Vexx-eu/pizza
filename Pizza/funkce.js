@@ -6,14 +6,7 @@ function displayPage(startIndex, poleProduktu, parent) {
     for(let i = startIndex; i < endIndex; i++) {
         if (i >= poleProduktu.length) break;
         let produkt = poleProduktu[i];
-
-        let navrh = template
-            .replace("{image}", produkt.image)
-            .replace("{name}", produkt.name)
-            .replace("{price}", produkt.price)
-            .replace("{description}", produkt.description)
-            .replace("{buy}", produkt.buy)
-            .replace("{detail}", produkt.detail);
+        let navrh = template.template(produkt)
 
         parentElement.insertAdjacentHTML("beforeend", navrh)
     }
@@ -28,25 +21,20 @@ function displayDetail(startIndex, poleProduktu, parent) {
     for(let i = startIndex; i < endIndex; i++) {
         if (i >= poleProduktu.length) break;
         let produkt = poleProduktu[i];
-
-        let navrh = template
-            .replace("{image}", produkt.image)
-            .replace("{name}", produkt.name)
-            .replace("{price}", produkt.price)
-            .replace("{description}", produkt.description)
-            .replace("{buy}", produkt.buy)
-            .replace("{detail}", produkt.detail)
-            .replace("{slozeni}", produkt.slozeni)
-            .replace("{sl1}", produkt.sl1)
-            .replace("{sl2}", produkt.sl2)
-            .replace("{sl3}", produkt.sl3)
-            .replace("{sl4}", produkt.sl4)
-            .replace("{sl5}", produkt.sl5)
-            .replace("{sl6}", produkt.sl6)
-            .replace("{sl7}", produkt.sl7);
-
+        let navrh = template.template(produkt)
 
         parentElement.insertAdjacentHTML("beforeend", navrh)
     }
 }
 
+
+String.prototype.template = function (d) {
+	return this.replace(/\{([^\}]+)\}/g, function (m, n) {
+		var o = d, p = n.split('|')[0].split('.');
+		for (var i = 0; i < p.length; i++) {
+			o = typeof o[p[i]] === "function" ? o[p[i]]() : o[p[i]];
+			if (typeof o === "undefined" || o === null) return n.indexOf('|') !== -1 ? n.split('|')[1] : m;
+		}
+		return o;
+	});
+};
