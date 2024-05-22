@@ -37,8 +37,8 @@
 
         </nav>
     </header>
-    <div class="underline"></div>
 
+                <!------  Main   ------> 
 
     <section class="top">
         <article class="uvodni">
@@ -52,59 +52,41 @@
         </article>
     </section>
 
+
     <section id="food" class="food">
     </section>
+
     <section id="drinks" class="drinks">
     </section>
 
     <section id="kosik" class="kosik">
-        <article class="soupis">
-            <table>
-                <tr>
-                    <th>Produkt</th>
-                    <th>Popis</th>
-                    <th>Cena</th>
-                    <th>Množství</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="img/margherita.png">
-                        <td>Margherita</td>
-                    <td>149 Kč</td>
-                    <td><&nbsp;1&nbsp;></td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="img/fanta.webp">
-                        <td>Fanta</td></td>
-                    <td>118 Kč</td>
-                    <td><&nbsp;2&nbsp;></td>
-                </tr>
-            </table>
-        </article>
-
-        <article class="list">
-            <h2>Košík</h2>
-            <div class="total">
-                <div>
-                    <p>Zboží celkem</p>
-                    <p>267 Kč</p>
-                </div>
-                <div>
-                    <p>Doprava</p>
-                    <p>120 Kč</p>
-                </div>
-                <div>
-                    <p>Celkem</p>
-                    <p>387 Kč</p>
-                </div>
-            </div>
-            <a href="" class="zaplat">Zaplatit</a>
-        </article>
     </section>
+
 
     <section class="detail" id="detail">
     </section>
+
+
+
+        <!------  Scripts   ------> 
+
+
+
+    <script type="text/html" id="template-jidlo">
+        <article class="produkt">
+            <img src="{image}">
+            <div class="nazev">
+                <h2>{name}</h2>
+                <p>{price}</p>
+            </div>
+            <p>{description}</p>
+            <div class="bottom">
+            <a href="#kosik" class="buy">{buy}</a>
+            <a href="#detail">
+                <span class="material-symbols-outlined">{detail}</span></a>
+            </div>
+        </article>
+    </script>
 
     <script type="text/html" id="template-detail">
         <article class="det1">
@@ -130,25 +112,48 @@
         </article> 
     </script>
 
+    <script type="text/html" id="template-kosik">
+        <article class="soupis">
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Popis</th>
+                    <th>Cena</th>
+                    <th>Množství</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{image}">
+                        <td>{name}</td>
+                    <td>{cena}</td>
+                    <td>      <div class="mnozstvi">
+                        <a href="" class="minus">{minus}</a>
+                        <p class="cislo">{cislo}</p>
+                        <a href="" class="plus">{plus}</a>                      
+                    </div></td>
+                </tr>
+            </table>
+        </article>
 
-    
-
-    <script type="text/html" id="template">
-        <article class="produkt">
-            <img src="{image}">
-            <div class="nazev">
-                <h2>{name}</h2>
-                <p>{price}</p>
+        <article class="list">
+            <h2>Košík</h2>
+            <div class="total">
+                <div>
+                    <p>Zboží celkem</p>
+                    <p>267 Kč</p>
+                </div>
+                <div>
+                    <p>Doprava</p>
+                    <p>120 Kč</p>
+                </div>
+                <div>
+                    <p>Celkem</p>
+                    <p>387 Kč</p>
+                </div>
             </div>
-            <p>{description}</p>
-            <div class="bottom">
-            <a href="#kosik" class="buy">{buy}</a>
-            <a href="#detail">
-                <span class="material-symbols-outlined">{detail}</span></a>
-            </div>
+            <a href="" class="zaplat">Zaplatit</a>
         </article>
     </script>
-
 
 
 </body>

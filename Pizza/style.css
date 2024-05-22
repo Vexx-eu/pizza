@@ -207,7 +207,7 @@ p {
 }
 
 th, td {
-    border-bottom: 1px solid rgb(87, 87, 87);
+    border-bottom: 1px solid rgb(0, 0, 0);
     height: 80px;
     width: 120px;
     padding: 10px 30px;
@@ -215,6 +215,7 @@ th, td {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 15px;
 }
 tr {
     display: flex;
@@ -305,4 +306,21 @@ td img {
 
 .popis p {
     margin-bottom: 15px;
+}
+
+.mnozstvi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.mnozstvi p{
+    padding: 10px;
+}
+
+.mnozstvi a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
 }

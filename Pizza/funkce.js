@@ -1,7 +1,7 @@
-function displayPage(startIndex, poleProduktu, parent) {
+function displayJidlo(startIndex, poleProduktu, parent) {
     let parentElement = document.querySelector(parent);
     let endIndex = startIndex + 3;
-    let template = document.getElementById("template").innerHTML;
+    let template = document.getElementById("template-jidlo").innerHTML;
 
     for(let i = startIndex; i < endIndex; i++) {
         if (i >= poleProduktu.length) break;
@@ -27,6 +27,20 @@ function displayDetail(startIndex, poleProduktu, parent) {
     }
 }
 
+
+function displayKosik(startIndex, poleProduktu, parent) {
+    let parentElement = document.querySelector(parent);
+    let endIndex = startIndex + 1;
+    let template = document.getElementById("template-kosik").innerHTML;
+
+    for(let i = startIndex; i < endIndex; i++) {
+        if (i >= poleProduktu.length) break;
+        let produkt = poleProduktu[i];
+        let navrh = template.template(produkt)
+
+        parentElement.insertAdjacentHTML("beforeend", navrh)
+    }
+}
 
 String.prototype.template = function (d) {
 	return this.replace(/\{([^\}]+)\}/g, function (m, n) {

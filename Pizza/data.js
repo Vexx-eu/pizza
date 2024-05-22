@@ -117,3 +117,64 @@ let detail = [
     }
 
 ];
+
+
+let kosik = [
+
+    {
+        "name": "Margherita",
+        "cena": "149 Kč",
+        "buy": "Koupit",
+        "image": "img/margherita.png",
+        "minus": "-",
+        "cislo": "1",
+        "plus": "+"
+    },
+    {
+        "name": "Pepperoni",
+        "cena": "159 Kč",
+        "buy": "Koupit",
+        "image": "img/pepperoni.png",
+        "minus": "-",
+        "cislo": "1",
+        "plus": "+"
+    },
+    {
+        "name": "Hawai",
+        "cena": "169 Kč",
+        "buy": "Koupit",
+        "image": "img/hawai.png",
+        "minus": "-",
+        "cislo": "1",
+        "plus": "+"
+    },
+    {
+        "name": "Coca-cola",
+        "cena": "79 Kč",
+        "buy": "Koupit",
+        "image": "img/cola.jpg",
+        "minus": "-",
+        "cislo": "1",
+        "plus": "+"
+    },
+    {
+        "name": "Fanta",
+        "cena": "59 Kč",
+        "buy": "Koupit",
+        "image": "img/fanta.jpg",
+        "minus": "-",
+        "cislo": "1",
+        "plus": "+"
+    },
+    {
+        "name": "Domácí limonáda",
+        "cena": "69 Kč",
+        "buy": "Koupit",
+        "image": "img/limonada.jpg",
+        "minus": "-",
+        "cislo": "1",
+        "plus": "+"
+    },
+
+
+];
