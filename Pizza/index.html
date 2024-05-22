@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Studio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="funkce.js" defer></script>
+    <script src="data.js" defer></script>
     <script src="pizza.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Ashopping_bag%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024">
 </head>
@@ -18,8 +21,8 @@
                 <img src="img/logo2.png" alt="" style="width: 100px;" hre></a>
             </div>
             <div class="navigace">
-                <a href="#" style="color: #ff0000;">MENU</a>
-                <a href="#">RESTAURACE</a>
+                <a href="#" style="color: #ff0000;">DOMŮ</a>
+                <a href="#food">MENU</a>
                 <a href="#">KONTAKT</a>
             </div>
             <div>
@@ -48,15 +51,10 @@
             <img src="img/pizza.jpg" alt="">
         </article>
     </section>
-    <div class="underline"></div>
+
+    <section id="food" class="food">
     </section>
-
-
-
-
-    <section id="food" class="menu">
-    </section>
-    <section id="drinks" class="menu">
+    <section id="drinks" class="drinks">
     </section>
 
     <section id="kosik" class="kosik">
@@ -104,6 +102,52 @@
             <a href="" class="zaplat">Zaplatit</a>
         </article>
     </section>
+
+    <section class="detail" id="detail">
+    </section>
+
+    <script type="text/html" id="template-detail">
+        <article class="det1">
+            <img src="{image}">
+        </article>
+        <article class="det2">
+            <h1>{name}</h1>
+            <p class="cena">{price}</p>
+            <div class="popis">
+                <p>{description}</p>
+                <p>{slozeni}</p>
+                <ul>
+                    <li>{sl1}</li>
+                    <li>{sl2}</li>
+                    <li>{sl3}</li>
+                    <li>{sl4}</li>
+                    <li>{sl5}</li>
+                    <li>{sl6}</li>
+                    <li>{sl7}</li>
+                </ul>
+                <a href="#kosik" class="buy">{buy}</a>
+            </div>
+        </article> 
+    </script>
+
+
+    
+
+    <script type="text/html" id="template">
+        <article class="produkt">
+            <img src="{image}">
+            <div class="nazev">
+                <h2>{name}</h2>
+                <p>{price}</p>
+            </div>
+            <p>{description}</p>
+            <div class="bottom">
+            <a href="#kosik" class="buy">{buy}</a>
+            <a href="#detail">
+                <span class="material-symbols-outlined">{detail}</span></a>
+            </div>
+        </article>
+    </script>
 
 
 

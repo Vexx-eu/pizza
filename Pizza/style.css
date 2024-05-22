@@ -73,7 +73,8 @@ nav a {
 
 
 section {
-    padding: 30px 10%;
+    padding: 30px 5%;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -89,7 +90,7 @@ section {
     font-size: 2.5em;
 }
 p {
-    color: rgb(77, 77, 77);
+    color: rgb(0, 0, 0);
     
 }
 
@@ -100,7 +101,6 @@ p {
 .top {
     display: flex;
     margin-top: 25px;
-    margin-bottom: 25px;
     align-items: center;
     justify-content: center;
 }
@@ -110,28 +110,19 @@ p {
     flex: 1;
     align-items: center;
 }
-
-
-.menu img{
-    width: 100%;
-    max-width: 70%;
-}
-
-
-
-
 .produkt {
-    border: solid grey 0.5px;
-    border-radius: 15px;
     width: 250px;
     min-width: 250px;
     text-align: left;
     margin: 10px;
     padding: 30px;
-    box-shadow: 0 0 0.8rem rgb(214, 214, 214);
+    box-shadow: 0 0 10px rgb(107, 107, 107);
+    border-radius: 7px;
+    transition: 0.5s;
 }
-.menu article {
-    margin: 10px;
+.produkt:hover{
+    scale: 1.04;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
 }
 .produkt img {
     width: 100%;
@@ -140,13 +131,11 @@ p {
 .produkt h2 {
     margin: 5px 0px;
 }
-.menu {
+.bottom{
     display: flex;
-    text-align: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
+    justify-content: space-between;
 }
 .nazev {
     display: flex;
@@ -163,17 +152,46 @@ p {
     color: red;
     font-size: 1.5em;
 }
-.menu .buy {
-    background-color: #fab100;
+.food, .drinks {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 200px;
+}
+.food article, .drinks article {
+    margin: 15px;
+}
+.food h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+.food .buy, .drinks .buy, .detail .buy{
+    background-color: #faaf00;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 10px;
     text-decoration: none;
     display: flex;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px;
     width: 130px;
     color: white;
     justify-content: center;
 }
+.food img, .drinks img {
+    width: 100%;
+    max-width: 70%;
+}
+.food a, .drinks a {
+    text-decoration: none;
+    color: black;
+}
+.drinks{
+    padding-top: 0px;
+}
+
 .buy {
     align-items: center;
 }
@@ -181,11 +199,6 @@ p {
     font-size: 25px;
     font-weight: 200;
 }
-.menu a {
-    text-decoration: none;
-    color: black;
-}
-
 .kosik {
     padding-bottom: 30px;
     display: flex;
@@ -244,9 +257,9 @@ td img {
 }
 
 .zaplat{
-    background-color: #fab100;
+    background-color: #faaf00;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 10px;
     text-decoration: none;
     display: flex;
     margin: 10px 0px 0px 0px;
@@ -254,4 +267,42 @@ td img {
     justify-content: center;
     align-items: center;
     color: black;
+}
+
+
+.detail h1{
+    font-size: 30px;
+}
+.detail {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    flex-wrap: nowrap;
+    padding: 30px 10%;
+    align-items: center;
+}
+
+.det1 img {
+    width: 400px;
+}
+
+.det2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 30px;
+    max-width: 50%; 
+}
+
+.cena {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.popis p {
+    margin-bottom: 15px;
 }
