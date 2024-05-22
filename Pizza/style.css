@@ -6,6 +6,7 @@ body {
   font-family: 'Gabarito', sans-serif;
   font-size: 15px;
   margin-top: 150px;
+  background-color: white;
 }
 header{
     position: fixed;
@@ -159,7 +160,7 @@ p {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 .food article, .drinks article {
     margin: 15px;
@@ -206,7 +207,14 @@ p {
     justify-content: space-between;
 }
 
-th, td {
+
+.soupis {
+    display: flex;
+    flex-direction: column;
+}
+
+
+th, td{
     border-bottom: 1px solid rgb(0, 0, 0);
     height: 80px;
     width: 120px;
@@ -222,13 +230,12 @@ tr {
     flex-direction: row;
 }
 
-td img {
+.kosik img {
     width: 80px;
 }
 
 .list {
-    border-radius: 5px;
-    border: 1px solid rgb(87, 87, 87);
+    border: 1px solid black;
     padding: 20px;
     width: 300px;
     display: flex;
@@ -236,8 +243,8 @@ td img {
 }
 .total {
     padding: 20px 0px;
-    border-top: 1px solid rgb(87, 87, 87);
-    border-bottom:  1px solid rgb(0, 0, 0);
+    border-top: 1px solid black;
+    border-bottom:  1px solid black;
 }
 .total div {
     display: flex;
@@ -323,4 +330,44 @@ td img {
     text-decoration: none;
     color: #000;
     font-size: 20px;
+}
+
+.vyber{
+    justify-content: center;
+}
+
+.vyber button{
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(107, 107, 107);
+    border: none;
+    padding: 15px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: black;
+    font-size: 16px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px;
+    transition: .4s;
+  }
+
+.vyber button:hover {
+    background-color: #ececec;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+}
+
+.hidden {
+    display: none;
+}
+
+.soupis span:last-of-type{
+    margin-left: 25px;
+}
+
+.soupis{
+    cursor: pointer;
 }

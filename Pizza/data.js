@@ -12,7 +12,7 @@ let pizzy = [
         "price": "159 Kč",
         "description": "Pepperoni pizza je oblíbená volba s pikantními plátky salámu, rajčatovým základem a mozzarellou.",
         "image": "img/pepperoni.png",
-        "buy": "koupit",
+        "buy": "Koupit",
         "detail": "info"
     },
     {
@@ -28,7 +28,7 @@ let pizzy = [
 
 let napoje = [
     {
-        "name": "Coca-cola",
+        "name": "Coca-Cola",
         "price": "79 Kč",
         "description": "Coca-cola 1.5L",
         "image": "img/cola.jpg",
@@ -126,54 +126,42 @@ let kosik = [
         "cena": "149 Kč",
         "buy": "Koupit",
         "image": "img/margherita.png",
-        "minus": "-",
-        "cislo": "1",
-        "plus": "+"
+        "cislo": "1"
     },
     {
         "name": "Pepperoni",
         "cena": "159 Kč",
         "buy": "Koupit",
         "image": "img/pepperoni.png",
-        "minus": "-",
-        "cislo": "1",
-        "plus": "+"
+        "cislo": "1"
     },
     {
         "name": "Hawai",
         "cena": "169 Kč",
         "buy": "Koupit",
         "image": "img/hawai.png",
-        "minus": "-",
-        "cislo": "1",
-        "plus": "+"
+        "cislo": "1"
     },
     {
-        "name": "Coca-cola",
+        "name": "Coca-Cola",
         "cena": "79 Kč",
         "buy": "Koupit",
         "image": "img/cola.jpg",
-        "minus": "-",
-        "cislo": "1",
-        "plus": "+"
+        "cislo": "1"
     },
     {
         "name": "Fanta",
         "cena": "59 Kč",
         "buy": "Koupit",
         "image": "img/fanta.jpg",
-        "minus": "-",
-        "cislo": "1",
-        "plus": "+"
+        "cislo": "1"
     },
     {
         "name": "Domácí limonáda",
         "cena": "69 Kč",
         "buy": "Koupit",
         "image": "img/limonada.jpg",
-        "minus": "-",
-        "cislo": "1",
-        "plus": "+"
+        "cislo": "1"
     },
 
 

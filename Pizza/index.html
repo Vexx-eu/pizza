@@ -10,8 +10,8 @@
     <script src="data.js" defer></script>
     <script src="pizza.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Ashopping_bag%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024">
+    <link href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aadd%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024" />
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Ashopping_bag%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024">
 </head>
 
 <body>
@@ -52,7 +52,11 @@
         </article>
     </section>
 
-
+    <section class="vyber">
+        <button id="jidlo">Jídlo</button>
+        <button id="napoj">Nápoje</button>
+        <button id="vse">Vše</button>
+    </section>
     <section id="food" class="food">
     </section>
 
@@ -60,9 +64,36 @@
     </section>
 
     <section id="kosik" class="kosik">
+            <article class="soupis">
+                <table>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Popis</th>
+                        <th>Cena</th>
+                        <th>Množství</th>
+                    </tr>
+                </table>
+            </article>
+            <article class="list">
+                <h2>Košík</h2>
+                <div class="total">
+                    <div>
+                        <p>Zboží celkem</p>
+                        <p>267 Kč</p>
+                    </div>
+                    <div>
+                        <p>Doprava</p>
+                        <p>120 Kč</p>
+                    </div>
+                    <div>
+                        <p>Celkem</p>
+                        <p id="celkem">500 Kč</p>
+                    </div>
+                </div>
+                <a href="" class="zaplat">Zaplatit</a>
+            </article>
     </section>
-
-
+    
     <section class="detail" id="detail">
     </section>
 
@@ -112,48 +143,26 @@
         </article> 
     </script>
 
-    <script type="text/html" id="template-kosik">
+    <script type="text/html" id="template-kosik" class="kosik">
         <article class="soupis">
             <table>
-                <tr>
-                    <th>Produkt</th>
-                    <th>Popis</th>
-                    <th>Cena</th>
-                    <th>Množství</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="{image}">
-                        <td>{name}</td>
-                    <td>{cena}</td>
-                    <td>      <div class="mnozstvi">
-                        <a href="" class="minus">{minus}</a>
-                        <p class="cislo">{cislo}</p>
-                        <a href="" class="plus">{plus}</a>                      
-                    </div></td>
-                </tr>
-            </table>
-        </article>
-
-        <article class="list">
-            <h2>Košík</h2>
-            <div class="total">
-                <div>
-                    <p>Zboží celkem</p>
-                    <p>267 Kč</p>
-                </div>
-                <div>
-                    <p>Doprava</p>
-                    <p>120 Kč</p>
-                </div>
-                <div>
-                    <p>Celkem</p>
-                    <p>387 Kč</p>
-                </div>
-            </div>
-            <a href="" class="zaplat">Zaplatit</a>
-        </article>
+        <tr>
+            <td>
+                <img src="{image}">
+                <td>{name}</td>
+            <td>{cena}</td>
+            <td>    
+                <div class="mnozstvi" id="mnozstvi">
+                <span class="material-symbols-outlined" id="minus">remove</span>
+                <p class="cislo" id="quantity">1</p>
+                <span class="material-symbols-outlined" id="plus">add</span>
+                <span class="material-symbols-outlined">delete</span>                     
+            </div></td>   
+        </tr>
+    </table>
+    </article>
     </script>
+
 
 
 </body>
