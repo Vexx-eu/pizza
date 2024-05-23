@@ -160,8 +160,9 @@ p {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 0px;
 }
+
 .food article, .drinks article {
     margin: 15px;
 }
@@ -290,16 +291,32 @@ tr {
     align-items: center;
 }
 
+li:empty {
+    display: none;
+}
 .det1 img {
     width: 400px;
 }
+.det1{
+    display: flex;
+    align-items: center;
+}
+.split{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.split:last-child{
+    padding-right: 60px;
+}
 .det2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 100px;
     max-width: 50%; 
 }
 
@@ -364,6 +381,13 @@ tr {
     display: none;
 }
 
+
+
+.zoom {
+    display: flex;
+    flex-direction: row;
+}
+
 .soupis span:last-of-type{
     margin-left: 25px;
 }
@@ -371,3 +395,4 @@ tr {
 .soupis{
     cursor: pointer;
 }
+

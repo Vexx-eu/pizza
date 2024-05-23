@@ -8,27 +8,39 @@ function displayJidlo(startIndex, poleProduktu, parent) {
     for(let i = startIndex; i < endIndex; i++) {
         if (i >= poleProduktu.length) break;
         let produkt = poleProduktu[i];
-        let navrh = template.template(produkt)
+        let navrh = template.template(produkt);
 
-        parentElement.insertAdjacentHTML("beforeend", navrh)
+        navrh = navrh.replace('id="uniqueID"', `id="${produkt.id}"`);
+        navrh = navrh.replace('id="uniqueIdDetail"', `id="${produkt.id}"`);
+        
+        
+
+
+
+
+        parentElement.insertAdjacentHTML("beforeend", navrh);
     }
 }
+
 
 // --------------- Zobrazuje Detail ---------------
 
 function displayDetail(startIndex, poleProduktu, parent) {
     let parentElement = document.querySelector(parent);
-    let endIndex = startIndex + 4;
+    let endIndex = startIndex + 1;
     let template = document.getElementById("template-detail").innerHTML;
 
-    for(let i = startIndex; i < endIndex; i++) {
+    for (let i = startIndex; i < endIndex; i++) {
         if (i >= poleProduktu.length) break;
         let produkt = poleProduktu[i];
-        let navrh = template.template(produkt)
+        let navrh = template.template(produkt);
 
-        parentElement.insertAdjacentHTML("beforeend", navrh)
+        navrh = navrh.replace('id="zoom"', `id="zoom-${produkt.id}"`);
+
+        parentElement.insertAdjacentHTML("beforeend", navrh);
     }
 }
+
 
 // --------------- Zobrazuje Košík ---------------
 
@@ -61,35 +73,14 @@ String.prototype.template = function (d) {
 
 // --------------- Košík (list se načítá jako poslední) ---------------
 
-    let kosikSection = document.getElementById("kosik");
-    let listArticle = kosikSection.querySelector("article.list");
-    kosikSection.appendChild(listArticle);
+    //  let kosikSection = document.getElementById("kosik");
+    //  let listArticle = kosikSection.querySelector("article.list");
+    //  kosikSection.appendChild(listArticle);
 
 
 
-// --------------- Tlačítka ---------------
+// --------------- Menu ---------------
 
-
-let jidlo = document.getElementById("jidlo");
-let napoj = document.getElementById("napoj");
-let vse = document.getElementById("vse");
-let food = document.getElementById("food");
-let drinks = document.getElementById("drinks");
-
-jidlo.addEventListener("click", function() {
-    showSection(food);
-    hideSection(drinks);
-});
-
-napoj.addEventListener("click", function() {
-    showSection(drinks);
-    hideSection(food);
-});
-
-vse.addEventListener("click", function() {
-    showSection(food);
-    showSection(drinks);
-});
 
 function showSection(section) {
     section.classList.remove("hidden");
@@ -99,4 +90,5 @@ function hideSection(section) {
     section.classList.add("hidden");
 }
 
-// --------------- Plus / Minus ---------------
+// --------------- Detail ---------------
+

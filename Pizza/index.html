@@ -102,9 +102,8 @@
         <!------  Scripts   ------> 
 
 
-
     <script type="text/html" id="template-jidlo">
-        <article class="produkt">
+        <article class="produkt" id="uniqueID">
             <img src="{image}">
             <div class="nazev">
                 <h2>{name}</h2>
@@ -114,12 +113,13 @@
             <div class="bottom">
             <a href="#kosik" class="buy">{buy}</a>
             <a href="#detail">
-                <span class="material-symbols-outlined">{detail}</span></a>
+                <span class="material-symbols-outlined" id="uniqueIdDetail">{detail}</span></a>
             </div>
         </article>
     </script>
 
     <script type="text/html" id="template-detail">
+        <div class="zoom" id="zoom">
         <article class="det1">
             <img src="{image}">
         </article>
@@ -128,6 +128,8 @@
             <p class="cena">{price}</p>
             <div class="popis">
                 <p>{description}</p>
+                <div class="split">
+                    <div>
                 <p>{slozeni}</p>
                 <ul>
                     <li>{sl1}</li>
@@ -138,17 +140,21 @@
                     <li>{sl6}</li>
                     <li>{sl7}</li>
                 </ul>
+            </div><div>
                 <a href="#kosik" class="buy">{buy}</a>
             </div>
+        </div>
+    </div>
         </article> 
+    </div>
     </script>
 
-    <script type="text/html" id="template-kosik" class="kosik">
+    <script type="text/html" id="template-kosik">
         <article class="soupis">
             <table>
         <tr>
             <td>
-                <img src="{image}">
+                <img src="{image}" id="obr">
                 <td>{name}</td>
             <td>{cena}</td>
             <td>    
@@ -161,7 +167,7 @@
         </tr>
     </table>
     </article>
-    </script>
+</script>
 
 
 

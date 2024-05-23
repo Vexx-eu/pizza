@@ -1,5 +1,6 @@
 let pizzy = [
     {
+        "id": "jidlo-1",
         "name": "Margherita",
         "price": "149 Kč",
         "description": "Tato klasická pizza je vyrobena z rajčatového základu, mozzarelly a čerstvé bazalky.",
@@ -8,6 +9,7 @@ let pizzy = [
         "detail": "info"
     },
     {
+        "id": "jidlo-2",
         "name": "Pepperoni",
         "price": "159 Kč",
         "description": "Pepperoni pizza je oblíbená volba s pikantními plátky salámu, rajčatovým základem a mozzarellou.",
@@ -16,6 +18,7 @@ let pizzy = [
         "detail": "info"
     },
     {
+        "id": "jidlo-3",
         "name": "Hawai",
         "price": "169 Kč",
         "description": "Hawai pizza kombinuje sladkost ananasu se šunkou na rajčatovém základu s mozzarellou.",
@@ -28,6 +31,7 @@ let pizzy = [
 
 let napoje = [
     {
+        "id": "jidlo-4",
         "name": "Coca-Cola",
         "price": "79 Kč",
         "description": "Coca-cola 1.5L",
@@ -36,6 +40,7 @@ let napoje = [
         "detail": ""
     },
     {
+        "id": "jidlo-5",
         "name": "Fanta",
         "price": "59 Kč",
         "description": "Fanta 1.5L",
@@ -44,6 +49,7 @@ let napoje = [
         "detail": ""
     },
     {
+        "id": "jidlo-6",
         "name": "Domácí limonáda",
         "price": "69 Kč",
         "description": "Domácí limonáda 0.75L",
@@ -56,6 +62,7 @@ let napoje = [
 
 let detail = [
     {
+        "id": "detail-1",
         "name": "Margherita",
         "price": "149 Kč",
         "description": "Pizza Margherita je klasická italská pizza, která se vyznačuje jednoduchostí a kvalitou surovin. Naše Margherita je připravena z čerstvého těsta, rajčatové omáčky, mozzarelly a bazalky. Tato kombinace vytváří harmonii chutí, kterou si zamilujete. Perfektní volba pro milovníky tradičních italských chutí.",
@@ -71,6 +78,7 @@ let detail = [
         "buy": "Koupit",
     },
     {
+        "id": "detail-2",
         "name": "Pepperoni",
         "price": "159 Kč",
         "description": "Pizza Pepperoni, ikona mezi milovníky pizzy, se chlubí bohatou kombinací chutí a výrazným kouskem. Naše Pizza Pepperoni je vytvořena s láskou a péčí, spojující čerstvé ingredience s tradičními postupy přípravy, aby každý kousek byl autentickým zážitkem pro vaše chuťové pohárky. S plátky pikantní pepperoni, které dodávají tu správnou štiplavost, a tím, že používáme kvalitní mozzarellu a rozinky našeho domácího těsta, vytváříme chuťovou symfonii, která okouzlí každého gurmána.",
@@ -86,6 +94,7 @@ let detail = [
         "buy": "koupit",
     },
     {
+        "id": "detail-3",
         "name": "Hawai",
         "price": "169 Kč",
         "description": "Pizza Hawai, s kombinací šťavnatého ananasu a slaného šunky, přináší exotický nádech do světa italských pochoutek. Naše Pizza Hawai je symbolem osvěžujícího kontrastu, kde se sladké a slané střetávají v dokonalé symbióze chutí. S každým soustem prožijete dobrodružství na vašem jazyku, které vás přenese na tropickou pláž s každým kouskem.",
@@ -101,6 +110,7 @@ let detail = [
         "buy": "Koupit",
     },
     {
+        "id": "detail-6",
         "name": "Domácí limonáda",
         "price": "69 Kč",
         "description": "Naše domácí limonáda je vytvořena z čerstvých ingrediencí, které zaručují jedinečnou kvalitu a chuť. Každá sklenice obsahuje čerstvě vymačkanou šťávu z nejlepších citronů, smíchanou s přesně naměřeným množstvím kvalitního cukru a osvěžující vodou. Bez umělých barviv, konzervantů či přísad, naše limonáda je zárukou čisté a přírodní chuti, která osvěží vaše smysly.",
@@ -122,6 +132,7 @@ let detail = [
 let kosik = [
 
     {
+        "id": "jidlo-1",
         "name": "Margherita",
         "cena": "149 Kč",
         "buy": "Koupit",
@@ -129,6 +140,7 @@ let kosik = [
         "cislo": "1"
     },
     {
+        "id": "jidlo-2",
         "name": "Pepperoni",
         "cena": "159 Kč",
         "buy": "Koupit",
@@ -136,6 +148,7 @@ let kosik = [
         "cislo": "1"
     },
     {
+        "id": "jidlo-3",
         "name": "Hawai",
         "cena": "169 Kč",
         "buy": "Koupit",
@@ -143,6 +156,7 @@ let kosik = [
         "cislo": "1"
     },
     {
+        "id": "jidlo-4",
         "name": "Coca-Cola",
         "cena": "79 Kč",
         "buy": "Koupit",
@@ -150,6 +164,7 @@ let kosik = [
         "cislo": "1"
     },
     {
+        "id": "jidlo-5",
         "name": "Fanta",
         "cena": "59 Kč",
         "buy": "Koupit",
@@ -157,6 +172,7 @@ let kosik = [
         "cislo": "1"
     },
     {
+        "id": "jidlo-6",
         "name": "Domácí limonáda",
         "cena": "69 Kč",
         "buy": "Koupit",
