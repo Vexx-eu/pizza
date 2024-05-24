@@ -53,8 +53,8 @@ nav a {
 
 .navKos{
     position: absolute;
-    top: 65px;
-    right: 52px;
+    top: 68px;
+    right: 65px;
     background: rgb(255, 128, 0);
     border-radius: 45%;
     font-weight: 700;
@@ -285,7 +285,7 @@ tr {
 }
 
 .zaplat{
-    background-color: #faaf00;
+    background-color: rgb(255, 128, 0);
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;

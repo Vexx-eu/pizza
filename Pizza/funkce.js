@@ -95,7 +95,8 @@ function Detail(id) {
 
 // --------------- Koupit ---------------
 
-function pridatDoKosiku() {
+function pridatDoKosiku(id) {
+    console.log(id);
 
     pocetVKosiku++;
     document.querySelector('.navKos').innerText = pocetVKosiku;
@@ -103,3 +104,14 @@ function pridatDoKosiku() {
     alert("Košík byl aktualizován!!!");
 }
 
+// -------    NavKos    --------
+
+function ZobrazKosik() {
+    kosikx.classList.remove("hidden");
+
+}
+
+function skryjKosik() {
+    kosikx.classList.add("hidden");
+
+}
