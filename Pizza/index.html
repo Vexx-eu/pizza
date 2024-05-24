@@ -63,7 +63,7 @@
     <section id="drinks" class="drinks">
     </section>
 
-    <section id="kosik" class="kosik">
+    <section id="kosik" class="kosik hidden">
             <article class="soupis">
                 <table>
                     <tr>
@@ -113,13 +113,13 @@
             <div class="bottom">
             <a href="#kosik" class="buy">{buy}</a>
             <a href="#detail">
-                <span class="material-symbols-outlined" id="uniqueIdDetail">{detail}</span></a>
+                <span class="material-symbols-outlined" id="uniqueIdDetail" onclick="Detail({id})">{detail}</span></a>
             </div>
         </article>
     </script>
 
     <script type="text/html" id="template-detail">
-        <div class="zoom" id="zoom">
+        <div class="detail hidden" id="detail-{id}">
         <article class="det1">
             <img src="{image}">
         </article>
@@ -150,7 +150,7 @@
     </script>
 
     <script type="text/html" id="template-kosik">
-        <article class="soupis">
+        <article class="soupis hidden">
             <table>
         <tr>
             <td>

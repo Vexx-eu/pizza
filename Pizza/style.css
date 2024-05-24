@@ -172,7 +172,7 @@ p {
     font-weight: 800;
 }
 .food .buy, .drinks .buy, .detail .buy{
-    background-color: #faaf00;
+    background-color: orange;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
@@ -383,7 +383,7 @@ li:empty {
 
 
 
-.zoom {
+.zoomShow{
     display: flex;
     flex-direction: row;
 }

@@ -27,7 +27,7 @@ function displayJidlo(startIndex, poleProduktu, parent) {
 
 function displayDetail(startIndex, poleProduktu, parent) {
     let parentElement = document.querySelector(parent);
-    let endIndex = startIndex + 1;
+    let endIndex = startIndex + 4;
     let template = document.getElementById("template-detail").innerHTML;
 
     for (let i = startIndex; i < endIndex; i++) {
@@ -92,3 +92,24 @@ function hideSection(section) {
 
 // --------------- Detail ---------------
 
+
+
+
+function Detail(id) {
+    let x = document.querySelector(`#detail-${id}`);
+    let smazat = document.querySelectorAll(".detail");
+    
+    for (let i = 1; i < smazat.length; i++) {
+        let element = smazat[i];
+        element.classList.add("hidden")
+        element.classList.remove("zoomShow");
+    }
+    
+    if (x) {
+        if (x.classList.contains("zoomShow")) {
+            x.classList.remove("zoomShow");
+        } else {
+            x.classList.add("zoomShow");
+        }
+    }
+}
