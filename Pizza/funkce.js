@@ -81,7 +81,6 @@ String.prototype.template = function (d) {
 
 // --------------- Menu ---------------
 
-
 function showSection(section) {
     section.classList.remove("hidden");
 }

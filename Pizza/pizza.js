@@ -15,16 +15,25 @@ let drinks = document.getElementById("drinks");
 jidlo.addEventListener("click", function() {
     showSection(food);
     hideSection(drinks);
+    this.style.backgroundColor = "orange";
+    napoj.style.backgroundColor = "white";
+    vse.style.backgroundColor = "white";
 });
 
 napoj.addEventListener("click", function() {
     showSection(drinks);
     hideSection(food);
+    this.style.backgroundColor = "orange";
+    jidlo.style.backgroundColor = "white";
+    vse.style.backgroundColor = "white";
 });
 
 vse.addEventListener("click", function() {
     showSection(food);
     showSection(drinks);
+    this.style.backgroundColor = "orange";
+    jidlo.style.backgroundColor = "white";
+    napoj.style.backgroundColor = "white";
 });
 
 
