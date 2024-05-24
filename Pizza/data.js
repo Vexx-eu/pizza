@@ -91,7 +91,7 @@ let detail = [
         "sl6": "Sůl",
         "sl7": "",
         "image": "img/pepperoni.png",
-        "buy": "koupit",
+        "buy": "Koupit",
     },
     {
         "id": "3",

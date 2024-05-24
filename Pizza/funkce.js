@@ -13,15 +13,9 @@ function displayJidlo(startIndex, poleProduktu, parent) {
         navrh = navrh.replace('id="uniqueID"', `id="${produkt.id}"`);
         navrh = navrh.replace('id="uniqueIdDetail"', `id="${produkt.id}"`);
         
-        
-
-
-
-
         parentElement.insertAdjacentHTML("beforeend", navrh);
     }
 }
-
 
 // --------------- Zobrazuje Detail ---------------
 
@@ -41,7 +35,6 @@ function displayDetail(startIndex, poleProduktu, parent) {
     }
 }
 
-
 // --------------- Zobrazuje Košík ---------------
 
 function displayKosik(startIndex, poleProduktu, parent) {
@@ -58,7 +51,6 @@ function displayKosik(startIndex, poleProduktu, parent) {
     }
 }
 
-
 String.prototype.template = function (d) {
 	return this.replace(/\{([^\}]+)\}/g, function (m, n) {
 		var o = d, p = n.split("|")[0].split(".");
@@ -69,15 +61,6 @@ String.prototype.template = function (d) {
 		return o;
 	});
 };
-
-
-// --------------- Košík (list se načítá jako poslední) ---------------
-
-    //  let kosikSection = document.getElementById("kosik");
-    //  let listArticle = kosikSection.querySelector("article.list");
-    //  kosikSection.appendChild(listArticle);
-
-
 
 // --------------- Menu ---------------
 
@@ -90,9 +73,6 @@ function hideSection(section) {
 }
 
 // --------------- Detail ---------------
-
-
-
 
 function Detail(id) {
     let x = document.querySelector(`#detail-${id}`);
@@ -112,3 +92,14 @@ function Detail(id) {
         }
     }
 }
+
+// --------------- Koupit ---------------
+
+function pridatDoKosiku() {
+
+    pocetVKosiku++;
+    document.querySelector('.navKos').innerText = pocetVKosiku;
+    span.classList.remove("hidden");
+    alert("Košík byl aktualizován!!!");
+}
+

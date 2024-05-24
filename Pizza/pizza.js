@@ -3,14 +3,13 @@ displayJidlo(0, napoje, "#drinks");
 displayDetail(0, detail, "#detail");
 displayKosik(0, kosik, "#kosik");
 
+// -----------   Tlačítka   -----------
+
 let jidlo = document.getElementById("jidlo");
 let napoj = document.getElementById("napoj");
 let vse = document.getElementById("vse");
 let food = document.getElementById("food");
 let drinks = document.getElementById("drinks");
-
-
-
 
 jidlo.addEventListener("click", function() {
     showSection(food);
@@ -36,6 +35,17 @@ vse.addEventListener("click", function() {
     napoj.style.backgroundColor = "white";
 });
 
+
+// ------- Koupit --------
+
+let pocetVKosiku = 0;
+let tlacitkaKoupit = document.querySelectorAll('.buy');
+let span = document.getElementById("span");
+
+
+tlacitkaKoupit.forEach(tlacitko => {
+    tlacitko.addEventListener('click', pridatDoKosiku);
+});
 
 
 

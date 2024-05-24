@@ -51,6 +51,25 @@ nav a {
     color: white;
 }
 
+.navKos{
+    position: absolute;
+    top: 65px;
+    right: 52px;
+    background: rgb(255, 128, 0);
+    border-radius: 45%;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    font-size: .9em;
+}
+.navIco{
+    margin: 15px;
+    margin-left: 30px;
+}
+
 .login {
     background-color: #E0E0E0;
     color: black;
@@ -172,7 +191,7 @@ p {
     font-weight: 800;
 }
 .food .buy, .drinks .buy, .detail .buy{
-    background-color: orange;
+    background-color: rgb(255, 128, 0);
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
