@@ -24,8 +24,8 @@
             </div>
             <div class="navigace">
                 <a href="#" id="domu" style="color: #ff0000;">DOMŮ</a>
-                <a href="#food">MENU</a>
-                <a href="#">KONTAKT</a>
+                <a href="#vyber" id="menu">MENU</a>
+                <a href="#footer" id="kontakt">KONTAKT</a>
             </div>
             <div>
                 <button class="button register">Registrovat</button>
@@ -56,7 +56,7 @@
 
                 <!------  Vyber   ------> 
 
-    <section class="vyber">
+    <section class="vyber" id="vyber">
         <button class="barva" id="jidlo">Jídlo</button>
         <button id="napoj">Nápoje</button>
         <button id="vse">Vše</button>
@@ -110,6 +110,55 @@
     <section class="detail" id="detail">
     </section>
 
+    <section class="sect4" id="footer">
+
+        <article class="btm1">
+            <a ><img src="img/logo2.png" alt="" class="btmlogo"></a>
+              </article>
+        <article class="btm2">
+    <div>
+        <h1>Vyberte jazyk</h1>
+        <a >Česky</a>
+        <a >English</a>
+        <a >Deutsch</a>
+    </div>
+    <div>
+       <h1>Prozkoumejte</h1> 
+       <a >Náš příběh</a>
+       <a >Kontakty</a>
+       <a >O Nás</a>
+    </div>
+    <div>
+      <h1>Důležité</h1> 
+      <a >Ochrana osobních údajů</a>
+      <a >Informace o cookies</a>
+      <a >Nastavení cookies</a>
+   </div>
+        </article>
+        <article class="btm2">
+            <div>
+                <h1>Kontakt:</h1>
+                <a >Karla IV. 13, 530 02 Pardubice I</a>
+                <a >+420 606 606 606</a>
+                <a >objednavky@pizzastudio.cz</a>
+            </div>
+                </article>
+        <article class="btm2">
+            <div>
+                <h1>Otevírací doba:</h1>
+                <a >Pondělí - Čtvrtek</a>
+                <a >Pátek - Sobota</a>
+                <a >Neděle</a>
+            </div>
+            <div class="btm3">
+                <h1></h1>
+                <a >10:30 - 20:30</a>
+                <a >10:30 - 21:30</a>
+                <a >11:00 - 20:30</a>
+            </div>
+                </article>
+    </section>
+
                     <!------  Scripts   ------> 
 
     <script type="text/html" id="template-jidlo">
@@ -151,7 +200,7 @@
                     <li>{sl7}</li>
                 </ul>
             </div><div>
-                <a href="#kosik" class="buy">{buy}</a>
+                <a href="#kosik" class="buy" onclick="pridatDoKosiku({id})">{buy}</a>
             </div>
         </div>
     </div>

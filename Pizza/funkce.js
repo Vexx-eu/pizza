@@ -62,16 +62,6 @@ String.prototype.template = function (d) {
 	});
 };
 
-// --------------- Menu ---------------
-
-function showSection(section) {
-    section.classList.remove("hidden");
-}
-
-function hideSection(section) {
-    section.classList.add("hidden");
-}
-
 // --------------- Detail ---------------
 
 function Detail(id) {
@@ -104,7 +94,16 @@ function pridatDoKosiku(id) {
     alert("Košík byl aktualizován!!!");
 }
 
-// -------    NavKos    --------
+
+// -------    Hide    --------
+
+function showSection(section) {
+    section.classList.remove("hidden");
+}
+
+function hideSection(section) {
+    section.classList.add("hidden");
+}
 
 function ZobrazKosik() {
     kosikx.classList.remove("hidden");
@@ -115,3 +114,21 @@ function skryjKosik() {
     kosikx.classList.add("hidden");
 
 }
+
+function skryjDetail1() {
+    detail1.classList.remove("zoomShow");
+
+}
+function skryjDetail2() {
+    detail2.classList.remove("zoomShow");
+
+}
+function skryjDetail3() {
+    detail3.classList.remove("zoomShow");
+
+}
+function skryjDetail6() {
+    detail6.classList.remove("zoomShow");
+
+}
+

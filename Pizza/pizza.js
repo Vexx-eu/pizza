@@ -21,12 +21,23 @@ let navKos = document.getElementById("iconka");
 let kosikx = document.getElementById("kosik"); 
 
 let domu = document.getElementById("domu");
+let menu = document.getElementById("menu");
+let kontakt = document.getElementById("kontakt");
+
+let detail1 = document.getElementById("detail-1");
+let detail2 = document.getElementById("detail-2");
+let detail3 = document.getElementById("detail-3");
+let detail6 = document.getElementById("detail-6");
 
 // -----------   Tlačítka   -----------
 
 jidlo.addEventListener("click", function() {
     showSection(food);
     hideSection(drinks);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
     jidlo.style.backgroundColor = "orange";
     napoj.style.backgroundColor = "white";
     vse.style.backgroundColor = "white";
@@ -35,6 +46,10 @@ jidlo.addEventListener("click", function() {
 napoj.addEventListener("click", function() {
     showSection(drinks);
     hideSection(food);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
     napoj.style.backgroundColor = "orange";
     jidlo.style.backgroundColor = "white";
     vse.style.backgroundColor = "white";
@@ -43,19 +58,14 @@ napoj.addEventListener("click", function() {
 vse.addEventListener("click", function() {
     showSection(food);
     showSection(drinks);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
     vse.style.backgroundColor = "orange";
     jidlo.style.backgroundColor = "white";
     napoj.style.backgroundColor = "white";
 });
-
-
-// -------    Koupit    --------
-
-/* tlacitkaKoupit.forEach(tlacitko => {
-    tlacitko.addEventListener('click', pridatDoKosiku);
-});
-*/
-
 
 // -------    NavKos    --------
  
@@ -66,6 +76,10 @@ navKos.addEventListener("click", function() {
     hideSection(jidlo);
     hideSection(napoj);
     hideSection(vse);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
 });
 
 // -------    NAV    --------
@@ -77,6 +91,36 @@ domu.addEventListener("click", function() {
     showSection(jidlo);
     showSection(napoj);
     showSection(vse);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
+});
+
+menu.addEventListener("click", function() {
+    skryjKosik(kosikx);
+    showSection(food);
+    showSection(drinks);
+    showSection(jidlo);
+    showSection(napoj);
+    showSection(vse);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
+});
+
+kontakt.addEventListener("click", function() {
+    skryjKosik(kosikx);
+    showSection(food);
+    showSection(drinks);
+    showSection(jidlo);
+    showSection(napoj);
+    showSection(vse);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
 });
 
 
