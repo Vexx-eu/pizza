@@ -221,6 +221,7 @@ p {
     font-weight: 200;
 }
 .kosik {
+    padding-top: 200px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -306,7 +307,7 @@ tr {
     flex-direction: row;
     margin-bottom: 80px;
     flex-wrap: nowrap;
-    padding: 30px 10%;
+    padding: 80px 10% 0px 10%;
     align-items: center;
 }
 

@@ -131,4 +131,12 @@ function skryjDetail6() {
     detail6.classList.remove("zoomShow");
 
 }
+function skryjVyber() {
+    vyber.classList.add("hidden");
+
+}
+function zobrazVyber() {
+    vyber.classList.remove("hidden");
+
+}
 

@@ -28,6 +28,7 @@ let detail1 = document.getElementById("detail-1");
 let detail2 = document.getElementById("detail-2");
 let detail3 = document.getElementById("detail-3");
 let detail6 = document.getElementById("detail-6");
+let vyber = document.getElementById("vyber");
 
 // -----------   Tlačítka   -----------
 
@@ -80,6 +81,7 @@ navKos.addEventListener("click", function() {
     skryjDetail2(detail2);
     skryjDetail3(detail3);
     skryjDetail6(detail6);
+    skryjVyber(vyber);
 });
 
 // -------    NAV    --------
@@ -95,6 +97,7 @@ domu.addEventListener("click", function() {
     skryjDetail2(detail2);
     skryjDetail3(detail3);
     skryjDetail6(detail6);
+    zobrazVyber(vyber);
 });
 
 menu.addEventListener("click", function() {
@@ -108,6 +111,7 @@ menu.addEventListener("click", function() {
     skryjDetail2(detail2);
     skryjDetail3(detail3);
     skryjDetail6(detail6);
+    zobrazVyber(vyber);
 });
 
 kontakt.addEventListener("click", function() {
@@ -121,6 +125,7 @@ kontakt.addEventListener("click", function() {
     skryjDetail2(detail2);
     skryjDetail3(detail3);
     skryjDetail6(detail6);
+    zobrazVyber(vyber);
 });
 
 
