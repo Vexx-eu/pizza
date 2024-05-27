@@ -132,7 +132,7 @@ function zobrazVyber() {
 
 // --------------- Košík ---------------
 
-let idVKosiku = []; 
+
 
 function pridatDoKosiku(id) {
     console.log(id);
@@ -155,6 +155,65 @@ function pridavejKosik(id) {
         }
 }
 
+function odstranPolozku(id) {
+    let x = document.querySelector(`#kosik-${id}`);
+
+    if (idVKosiku.includes(id), x) {
+        pocetVKosiku--;
+        document.querySelector('.navKos').innerText = pocetVKosiku;
+        idVKosiku.splice(idVKosiku.indexOf(id), 1); 
+        alert("Položka byla odebrána z košíku!!!");
+        x.classList.add("hidden");
+        if (pocetVKosiku === 0) {
+            span.classList.add("hidden");
+        }
+    }
+}
 
 
+function pridejPolozku(id) {
+    let cislo = document.querySelector(`#kosik-${id} .cislo`);
+    let cena = document.querySelector(`#kosik-${id} .cenax`);
+    let mnozstvi = cena.getAttribute("data-cena");
+    let aktualni = cislo.innerText;
+    
+    if (aktualni < 10) {
+    aktualni++;
+    cislo.innerText = aktualni;
+    cena.innerText = mnozstvi * aktualni + ' Kč';
+    }
+}
 
+function uberPolozku(id) {
+    let cislo = document.querySelector(`#kosik-${id} .cislo`);
+    let cena = document.querySelector(`#kosik-${id} .cenax`);
+    let mnozstvi = cena.getAttribute("data-cena");
+    let aktualni = cislo.innerText;
+
+    if (aktualni > 1) {
+        aktualni--;
+        cislo.innerText = aktualni;
+        cena.innerText = mnozstvi * aktualni + ' Kč';
+    }
+}
+
+function objednavka() {
+    return Math.floor(Math.random() * 99) + 1;
+  }
+
+
+  // --------------- List ---------------
+  function cenaCelkem() {
+    let cenaCelkem = 0;
+
+
+    for (let i = 0; i < idVKosiku.length; i++) {
+        let id = idVKosiku[i];
+        let polozka = kosik.find(item => item.id === cena);
+        cenaCelkem += polozka.cena * polozka.cislo;
+    }
+
+
+    let celkem = document.getElementById("celkem");
+    celkem.textContent = cenaCelkem;
+}

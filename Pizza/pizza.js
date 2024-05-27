@@ -13,7 +13,6 @@ let vse = document.getElementById("vse");
 let food = document.getElementById("food");
 let drinks = document.getElementById("drinks");
 
-let pocetVKosiku = 0;
 let tlacitkaKoupit = document.querySelectorAll('.buy');
 let span = document.getElementById("span");
 
@@ -29,6 +28,12 @@ let detail2 = document.getElementById("detail-2");
 let detail3 = document.getElementById("detail-3");
 let detail6 = document.getElementById("detail-6");
 let vyber = document.getElementById("vyber");
+
+let idVKosiku = []; 
+let pocetVKosiku = 0; 
+
+let cislo = document.getElementById("objednavka");
+    cislo.textContent = objednavka();
 
 // -----------   Tlačítka   -----------
 

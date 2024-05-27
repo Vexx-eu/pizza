@@ -134,7 +134,7 @@ let kosik = [
     {
         "id": "1",
         "name": "Margherita",
-        "cena": "149 Kč",
+        "cena": "149",
         "buy": "Koupit",
         "image": "img/margherita.png",
         "cislo": "1"
@@ -142,7 +142,7 @@ let kosik = [
     {
         "id": "2",
         "name": "Pepperoni",
-        "cena": "159 Kč",
+        "cena": "159",
         "buy": "Koupit",
         "image": "img/pepperoni.png",
         "cislo": "1"
@@ -150,7 +150,7 @@ let kosik = [
     {
         "id": "3",
         "name": "Hawai",
-        "cena": "169 Kč",
+        "cena": "169",
         "buy": "Koupit",
         "image": "img/hawai.png",
         "cislo": "1"
@@ -158,7 +158,7 @@ let kosik = [
     {
         "id": "4",
         "name": "Coca-Cola",
-        "cena": "79 Kč",
+        "cena": "79",
         "buy": "Koupit",
         "image": "img/cola.jpg",
         "cislo": "1"
@@ -166,7 +166,7 @@ let kosik = [
     {
         "id": "5",
         "name": "Fanta",
-        "cena": "59 Kč",
+        "cena": "59",
         "buy": "Koupit",
         "image": "img/fanta.jpg",
         "cislo": "1"
@@ -174,7 +174,7 @@ let kosik = [
     {
         "id": "6",
         "name": "Domácí limonáda",
-        "cena": "69 Kč",
+        "cena": "69",
         "buy": "Koupit",
         "image": "img/limonada.jpg",
         "cislo": "1"

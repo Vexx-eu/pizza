@@ -86,20 +86,34 @@
                 </table>
             </article>
             <article class="list">
-                <h2>Košík</h2>
+                <h2>Objednávka číslo <span id="objednavka"></span></h2>
                 <div class="total">
                     <div>
                         <p>Zboží celkem</p>
-                        <p>267 Kč</p>
+                        <p>x Kč</p>
                     </div>
-                    <div>
-                        <p>Doprava</p>
+                    <div class="second">
+                        <p>  + Doprava</p>
                         <p>120 Kč</p>
                     </div>
-                    <div>
-                        <p>Celkem</p>
-                        <p id="celkem">500 Kč</p>
+                    <div class="third">
+                        <p>CELKEM</p>
+                        <p><span id="celkem"></span> Kč</p>
                     </div>
+                    <form method="post">
+                    <div class="formRow">
+                        <input type="text" name="name" placeholder="Jméno" />
+                        <input type="text" name="surname" placeholder="Přijmení" />
+                    </div>
+                    <div class="formRow">
+                        <input type="text" name="city" placeholder="Město" />
+                        <input type="text" name="street" placeholder="Ulice" />
+                    </div>
+                    <div class="formRow">
+                        <input type="text" name="telefon" placeholder="Telefon" />
+                        <input type="text" name="email" placeholder="Email" />
+                    </div>
+                      </form>
                 </div>
                 <a href="" class="zaplat">Zaplatit</a>
             </article>
@@ -215,14 +229,14 @@
             <td>
                 <img src="{image}" id="obr">
                 <td>{name}</td>
-            <td>{cena}</td>
+            <td data-cena="{cena}" class="cenax">{cena} Kč</td>
             <td>    
                 <div class="mnozstvi" id="mnozstvi">
-                <span class="material-symbols-outlined" id="minus">remove</span>
-                <p class="cislo" id="quantity">1</p>
-                <span class="material-symbols-outlined" id="plus">add</span>
-                <span class="material-symbols-outlined" onclick="odstranPolozku({id})">delete</span>                     
-            </div></td>   
+                    <span class="material-symbols-outlined" id="minus" onclick="uberPolozku({id})">remove</span>
+                    <p class="cislo" id="cislo">1</p>
+                    <span class="material-symbols-outlined plus" id="plus" onclick="pridejPolozku({id})">add</span>
+                    <span class="material-symbols-outlined" onclick="odstranPolozku({id})">delete</span>
+                </div></td>   
         </tr>
 
     </table>
