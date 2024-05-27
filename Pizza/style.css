@@ -223,6 +223,8 @@ p {
 .kosik {
     padding-top: 140px;
     padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -236,8 +238,7 @@ p {
 
 
 th, td{
-    border-bottom: 1px solid rgb(0, 0, 0);
-    height: 80px;
+    height: 60px;
     width: 120px;
     padding: 10px 30px;
     align-items: center;
@@ -245,10 +246,24 @@ th, td{
     flex-direction: row;
     justify-content: center;
     font-size: 15px;
+
 }
 tr {
     display: flex;
     flex-direction: row;
+    box-shadow: 0 0 7px rgb(170, 170, 170);
+    border-radius: 7px;
+    margin: 6px;
+}
+.tabPrvni{
+    box-shadow: none;
+    border-radius: 0px;
+}
+.tabPrvni th{
+    height: 30px;
+}
+th{
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .kosik img {
@@ -256,7 +271,8 @@ tr {
 }
 
 .list {
-    border: 1px solid black;
+    box-shadow: 0 0 13px rgb(0, 0, 0);
+    border-radius: 7px;
     padding: 20px;
     width: 500px;
     display: flex;
@@ -272,8 +288,12 @@ tr {
     flex-direction: row;
     justify-content: space-between;
 }
+.first p{
+    margin: 0px;
+}
 .second {
     margin: 0px 0px 20px 0px;
+    border-bottom: 1px solid black;
 }
 .third{
     margin: 20px 0px;
@@ -300,14 +320,18 @@ form {
   .formRow1-1{
     width: 180px;
     border-radius: 10px 0px 0px 0px;
+    border-right: none;
+    border-bottom: none;
   }
   .formRow1-2{
     width: 180px;
     border-radius: 0px 10px 0px 0px;
+    border-bottom: none;
   }
   .formRow2-1{
     width: 120px;
     border-radius: 0px 0px 0px 10px;
+    border-right: none;
   }
   .formRow2-2{
     width: 240px;
@@ -316,22 +340,26 @@ form {
   .formRow3-1{
     width: 120px;
     border-radius: 10px 0px 0px 10px;
+    border-right: none;
   }
   .formRow3-2{
     width: 120px;
     border-radius: 0px;
+    border-right: none;
   }
   .formRow3-3{
     width: 90px;
     border-radius: 0px 10px 10px 0px;
   }
   .formRow4-1{
-    width: 393px;
+    width: 391px;
     border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
   }
   .formRow4-2{
     width: 180px;
     border-radius: 0px 0px 0px 10px;
+    border-right: none;
   }
   .formRow4-3{
     width: 180px;
@@ -339,6 +367,8 @@ form {
   }
   input{
     padding: 15px;
+    display: inline-block;
+    border: 1px solid rgb(66, 66, 66);
   }
 
 
@@ -352,7 +382,6 @@ form {
     color: white;
     justify-content: center;
     align-items: center;
-    color: black;
 }
 
 
@@ -476,6 +505,11 @@ li:empty {
 
 .soupis{
     cursor: pointer;
+}
+.soupis:first-child{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+    padding: 40px;
 }
 
 .sect4{

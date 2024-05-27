@@ -28,6 +28,7 @@ let detail2 = document.getElementById("detail-2");
 let detail3 = document.getElementById("detail-3");
 let detail6 = document.getElementById("detail-6");
 let vyber = document.getElementById("vyber");
+let topx = document.getElementById("top");
 
 let idVKosiku = []; 
 let pocetVKosiku = 0; 
@@ -87,6 +88,7 @@ navKos.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     skryjVyber(vyber);
+    skryjTop(topx);
 });
 
 // -------    NAV    --------
@@ -103,6 +105,7 @@ domu.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     zobrazVyber(vyber);
+    zobrazTop(topx);
 });
 
 menu.addEventListener("click", function() {
@@ -117,6 +120,7 @@ menu.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     zobrazVyber(vyber);
+    zobrazTop(topx);
 });
 
 kontakt.addEventListener("click", function() {
@@ -131,6 +135,7 @@ kontakt.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     zobrazVyber(vyber);
+    zobrazTop(topx);
 });
 
 

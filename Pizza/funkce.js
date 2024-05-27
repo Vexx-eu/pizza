@@ -129,6 +129,14 @@ function zobrazVyber() {
     vyber.classList.remove("hidden");
 
 }
+function zobrazTop() {
+    topx.classList.remove("hidden");
+
+}
+function skryjTop() {
+    topx.classList.add("hidden");
+
+}
 
 // --------------- Košík ---------------
 
