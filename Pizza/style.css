@@ -278,25 +278,31 @@ th{
     display: flex;
     flex-direction: column;
 }
+
 .total {
     padding: 20px 0px;
     border-top: 1px solid black;
     border-bottom:  1px solid black;
+    margin: 25px;
 }
 .total div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .first p{
     margin: 0px;
+    font-weight: 500;
 }
 .second {
     margin: 0px 0px 20px 0px;
     border-bottom: 1px solid black;
+    font-weight: 500;
 }
 .third{
     margin: 20px 0px;
+    font-weight: 600;
 }
 .third p{
     font-size: 19px;
@@ -308,61 +314,64 @@ th{
     align-self: center;
 }
 .list h2 {
-    margin: 0px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 30px;
+}
+.objn-cislo{
+    align-self: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
   }
   .formRow1-1{
-    width: 180px;
+    width: 200px;
     border-radius: 10px 0px 0px 0px;
     border-right: none;
     border-bottom: none;
   }
   .formRow1-2{
-    width: 180px;
+    width: 200px;
     border-radius: 0px 10px 0px 0px;
     border-bottom: none;
   }
   .formRow2-1{
-    width: 120px;
+    width: 140px;
     border-radius: 0px 0px 0px 10px;
     border-right: none;
   }
   .formRow2-2{
-    width: 240px;
+    width: 260px;
     border-radius: 0px 0px 10px 0px;
   }
   .formRow3-1{
-    width: 120px;
+    width: 140px;
     border-radius: 10px 0px 0px 10px;
     border-right: none;
   }
   .formRow3-2{
-    width: 120px;
+    width: 140px;
     border-radius: 0px;
     border-right: none;
   }
   .formRow3-3{
-    width: 90px;
+    width: 75px;
     border-radius: 0px 10px 10px 0px;
   }
   .formRow4-1{
-    width: 391px;
+    width: 450px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: none;
   }
   .formRow4-2{
-    width: 180px;
+    width: 200px;
     border-radius: 0px 0px 0px 10px;
     border-right: none;
   }
   .formRow4-3{
-    width: 180px;
+    width: 200px;
     border-radius: 0px 0px 10px 0px;
   }
   input{
