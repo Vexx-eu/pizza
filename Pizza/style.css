@@ -297,16 +297,52 @@ form {
     align-items: center;
 
   }
-  input {
-    padding: 20px;
-    margin: 2px;
-    border-radius: 5px;
-    color: black;
+  .formRow1-1{
+    width: 180px;
+    border-radius: 10px 0px 0px 0px;
   }
-  .formRow{
-    display: flex;
-    flex-direction: row;
+  .formRow1-2{
+    width: 180px;
+    border-radius: 0px 10px 0px 0px;
   }
+  .formRow2-1{
+    width: 120px;
+    border-radius: 0px 0px 0px 10px;
+  }
+  .formRow2-2{
+    width: 240px;
+    border-radius: 0px 0px 10px 0px;
+  }
+  .formRow3-1{
+    width: 120px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .formRow3-2{
+    width: 120px;
+    border-radius: 0px;
+  }
+  .formRow3-3{
+    width: 90px;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .formRow4-1{
+    width: 393px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .formRow4-2{
+    width: 180px;
+    border-radius: 0px 0px 0px 10px;
+  }
+  .formRow4-3{
+    width: 180px;
+    border-radius: 0px 0px 10px 0px;
+  }
+
+
+  input{
+    padding: 15px;
+  }
+
 
 .zaplat{
     background-color: rgb(255, 128, 0);

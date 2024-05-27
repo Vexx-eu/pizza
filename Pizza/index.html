@@ -94,24 +94,34 @@
                     </div>
                     <div class="second">
                         <p>  + Doprava</p>
-                        <p>120 Kč</p>
+                        <p>70 Kč</p>
                     </div>
                     <div class="third">
                         <p>CELKEM</p>
                         <p><span id="celkem"></span> Kč</p>
                     </div>
                     <form method="post">
-                    <div class="formRow">
-                        <input type="text" name="name" placeholder="Jméno" />
-                        <input type="text" name="surname" placeholder="Přijmení" />
+                <div style="display: flex; flex-direction: column; ">
+                    <div>
+                        <input type="text" name="name" placeholder="Jméno" class="formRow1-1"/>
+                        <input type="text" name="surname" placeholder="Příjmení"  class="formRow1-2"/>
                     </div>
-                    <div class="formRow">
-                        <input type="text" name="city" placeholder="Město" />
-                        <input type="text" name="street" placeholder="Ulice" />
+                    <div>
+                        <input type="text" name="telefon" placeholder="Telefon" class="formRow2-1"/>
+                        <input type="text" name="email" placeholder="Email" class="formRow2-2" />
                     </div>
-                    <div class="formRow">
-                        <input type="text" name="telefon" placeholder="Telefon" />
-                        <input type="text" name="email" placeholder="Email" />
+                </div>
+                    <div style="margin: 25px;">
+                        <input type="text" name="city" placeholder="Město"  class="formRow3-1"/>
+                        <input type="text" name="street" placeholder="Ulice" class="formRow3-2" />
+                        <input type="text" name="postal code" placeholder="PSČ"  class="formRow3-3"/>
+                    </div>
+                    <div>
+                        <input name="credit-number" type="tel" pattern="\d*" maxlength="19" placeholder="Číslo Karty"  class="formRow4-1"/>
+                    </div>
+                    <div>
+                        <input name="credit-expires" type="tel" pattern="\d*" maxlength="7" placeholder="MM / YY" class="formRow4-2" />
+                        <input name="credit-cvc" type="tel" pattern="\d*" maxlength="4" placeholder="CVC"  class="formRow4-3"/>
                     </div>
                       </form>
                 </div>
