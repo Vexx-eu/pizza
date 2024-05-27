@@ -47,6 +47,8 @@ function displayKosik(startIndex, poleProduktu, parent) {
         let produkt = poleProduktu[i];
         let navrh = template.template(produkt)
 
+        navrh = navrh.replace('id="soupis"', `id="${produkt.id}"`);
+
         parentElement.insertAdjacentHTML("beforeend", navrh)
     }
 }
@@ -82,18 +84,6 @@ function Detail(id) {
         }
     }
 }
-
-// --------------- Koupit ---------------
-
-function pridatDoKosiku(id) {
-    console.log(id);
-
-    pocetVKosiku++;
-    document.querySelector('.navKos').innerText = pocetVKosiku;
-    span.classList.remove("hidden");
-    alert("Košík byl aktualizován!!!");
-}
-
 
 // -------    Hide    --------
 
@@ -139,4 +129,32 @@ function zobrazVyber() {
     vyber.classList.remove("hidden");
 
 }
+
+// --------------- Košík ---------------
+
+let idVKosiku = []; 
+
+function pridatDoKosiku(id) {
+    console.log(id);
+
+        if (!idVKosiku.includes(id)) {
+            pocetVKosiku++;
+            idVKosiku.push(id);
+            document.querySelector('.navKos').innerText = pocetVKosiku;
+            span.classList.remove("hidden");
+            alert("Košík byl aktualizován!!!");
+        } else {
+            alert("Tuto položku již máte v košíku!!!");
+        }
+    }
+
+function pridavejKosik(id) {
+    let x = document.querySelector(`#kosik-${id}`);    
+    if (x) {
+            x.classList.remove("hidden");
+        }
+}
+
+
+
 

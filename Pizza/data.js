@@ -132,7 +132,7 @@ let detail = [
 let kosik = [
 
     {
-        "id": "jidlo-1",
+        "id": "1",
         "name": "Margherita",
         "cena": "149 Kč",
         "buy": "Koupit",
@@ -140,7 +140,7 @@ let kosik = [
         "cislo": "1"
     },
     {
-        "id": "jidlo-2",
+        "id": "2",
         "name": "Pepperoni",
         "cena": "159 Kč",
         "buy": "Koupit",
@@ -148,7 +148,7 @@ let kosik = [
         "cislo": "1"
     },
     {
-        "id": "jidlo-3",
+        "id": "3",
         "name": "Hawai",
         "cena": "169 Kč",
         "buy": "Koupit",
@@ -156,7 +156,7 @@ let kosik = [
         "cislo": "1"
     },
     {
-        "id": "jidlo-4",
+        "id": "4",
         "name": "Coca-Cola",
         "cena": "79 Kč",
         "buy": "Koupit",
@@ -164,7 +164,7 @@ let kosik = [
         "cislo": "1"
     },
     {
-        "id": "jidlo-5",
+        "id": "5",
         "name": "Fanta",
         "cena": "59 Kč",
         "buy": "Koupit",
@@ -172,7 +172,7 @@ let kosik = [
         "cislo": "1"
     },
     {
-        "id": "jidlo-6",
+        "id": "6",
         "name": "Domácí limonáda",
         "cena": "69 Kč",
         "buy": "Koupit",

@@ -170,7 +170,7 @@
             </div>
             <p>{description}</p>
             <div class="bottom">
-            <a href="#kosik" class="buy" onclick="pridatDoKosiku({id})">{buy}</a>
+                <a href="#kosik" class="buy" onclick="pridatDoKosiku({id}), pridavejKosik({id})">{buy}</a>
             <a href="#detail">
                 <span class="material-symbols-outlined" id="uniqueIdDetail" onclick="Detail({id})">{detail}</span></a>
             </div>
@@ -200,7 +200,7 @@
                     <li>{sl7}</li>
                 </ul>
             </div><div>
-                <a href="#kosik" class="buy" onclick="pridatDoKosiku({id})">{buy}</a>
+                <a href="#kosik" class="buy" onclick="pridatDoKosiku({id}), pridavejKosik({id})">{buy}</a>
             </div>
         </div>
     </div>
@@ -209,7 +209,7 @@
     </script>
 
     <script type="text/html" id="template-kosik">
-        <article class="soupis hidden">
+        <article class="soupis hidden" id="kosik-{id}">
             <table>
         <tr>
             <td>
@@ -221,9 +221,10 @@
                 <span class="material-symbols-outlined" id="minus">remove</span>
                 <p class="cislo" id="quantity">1</p>
                 <span class="material-symbols-outlined" id="plus">add</span>
-                <span class="material-symbols-outlined">delete</span>                     
+                <span class="material-symbols-outlined" onclick="odstranPolozku({id})">delete</span>                     
             </div></td>   
         </tr>
+
     </table>
     </article>
 </script>
