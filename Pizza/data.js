@@ -129,4 +129,50 @@ let detail = [
 ];
 
 
-let kosik = [];
+let kosik = [
+
+    {
+        "id": "1",
+        "name": "Margherita",
+        "cena": "149",
+        "buy": "Koupit",
+        "image": "img/margherita.png",
+    },
+    {
+        "id": "2",
+        "name": "Pepperoni",
+        "cena": "159",
+        "buy": "Koupit",
+        "image": "img/pepperoni.png",
+    },
+    {
+        "id": "3",
+        "name": "Hawai",
+        "cena": "169",
+        "buy": "Koupit",
+        "image": "img/hawai.png",
+    },
+    {
+        "id": "4",
+        "name": "Coca-Cola",
+        "cena": "79",
+        "buy": "Koupit",
+        "image": "img/cola.jpg",
+    },
+    {
+        "id": "5",
+        "name": "Fanta",
+        "cena": "59",
+        "buy": "Koupit",
+        "image": "img/fanta.jpg",
+    },
+    {
+        "id": "6",
+        "name": "Domácí limonáda",
+        "cena": "69",
+        "buy": "Koupit",
+        "image": "img/limonada.jpg",
+    },
+
+
+];
