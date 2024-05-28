@@ -1,9 +1,9 @@
 // -----------   Show   -----------
-
 displayJidlo(0, pizzy, "#food");
 displayJidlo(0, napoje, "#drinks");
 displayDetail(0, detail, "#detail");
 displayKosik(0, kosik, "#kosik");
+
 
 // -----------   Deklarace   -----------
 
@@ -35,6 +35,13 @@ let pocetVKosiku = 0;
 
 let cislo = document.getElementById("objednavka");
     cislo.textContent = objednavka();
+
+let buyButton = document.getElementById('buyButton');
+let buyPizza = document.getElementById("buyPizza");
+let zaplatiDialog = document.getElementById("zaplatiDialog");
+let zavritDialog = document.getElementById("zavritDialog");
+
+
 
 // -----------   Tlačítka   -----------
 
