@@ -126,7 +126,7 @@
                     </div>
                       </form>
                 </div>
-                <a class="zaplat" onclick="zaplatit()">Zaplatit</a>
+                <a href="#" class="zaplat hidden" id="zaplatit" onclick="openPopup()">Zaplatit</a>
             </article>
     </section>
 
@@ -258,11 +258,14 @@
 
                     <!------  Dialogs   ------> 
 
-<dialog id="buyPizza" class="hidden">
-        <h1>"Položka" byla přidána do košíku</h1>
-        <img src="" alt=""><p>"obrazek"</p>
-        <button class="zavritDialog" onclick="zavrit()">Zavřít</button>
-</dialog>
+                    
+
+<div class="popup" id="popup">
+    <img src="img/tick.png">
+    <h2>Děkujeme za Vaši objednávku číslo <span id="objednavka2"></span> !</h2>
+    <p>Vaše údaje byly úspěšně odeslány.</p> 
+    <button type="button" onclick="closePopup(), refresh()" >OK</button>
+    </div>
 
 <dialog id="zaplatiDialog" class="hidden">
     <h1>Děkujeme za Objednávku</h1>

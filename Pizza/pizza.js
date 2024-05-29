@@ -30,16 +30,21 @@ let detail6 = document.getElementById("detail-6");
 let vyber = document.getElementById("vyber");
 let topx = document.getElementById("top");
 
-let idVKosiku = []; 
-let pocetVKosiku = 0; 
+
 
 let cislo = document.getElementById("objednavka");
     cislo.textContent = objednavka();
 
-let buyButton = document.getElementById('buyButton');
-let buyPizza = document.getElementById("buyPizza");
-let zaplatiDialog = document.getElementById("zaplatiDialog");
-let zavritDialog = document.getElementById("zavritDialog");
+    let cisloy = document.getElementById("objednavka2");
+    cisloy.textContent = objednavka2();
+
+let popup = document.getElementById("popup");
+let zaplat = document.getElementById("zaplatit");    
+
+let idVKosiku = []; 
+let pocetVKosiku = 0; 
+
+document.getElementById("zaplatit").addEventListener("click", zaplatit);
 
 
 
@@ -145,7 +150,22 @@ kontakt.addEventListener("click", function() {
     zobrazTop(topx);
 });
 
+// -------    Zaplatit    --------
 
+zaplat.addEventListener("click", function() {
+    skryjKosik(kosikx);
+    showSection(food);
+    showSection(drinks);
+    showSection(jidlo);
+    showSection(napoj);
+    showSection(vse);
+    skryjDetail1(detail1);
+    skryjDetail2(detail2);
+    skryjDetail3(detail3);
+    skryjDetail6(detail6);
+    zobrazVyber(vyber);
+    zobrazTop(topx);
+    zaplatitHidden(zaplat);
 
-
+});
 

@@ -2,7 +2,7 @@
 
 function displayJidlo(startIndex, poleProduktu, parent) {
     let parentElement = document.querySelector(parent);
-    let endIndex = startIndex + 3;
+    let endIndex = startIndex + 100;
     let template = document.getElementById("template-jidlo").innerHTML;
 
     for(let i = startIndex; i < endIndex; i++) {
@@ -21,7 +21,7 @@ function displayJidlo(startIndex, poleProduktu, parent) {
 
 function displayDetail(startIndex, poleProduktu, parent) {
     let parentElement = document.querySelector(parent);
-    let endIndex = startIndex + 4;
+    let endIndex = startIndex + 100;
     let template = document.getElementById("template-detail").innerHTML;
 
     for (let i = startIndex; i < endIndex; i++) {
@@ -39,7 +39,7 @@ function displayDetail(startIndex, poleProduktu, parent) {
 
 function displayKosik(startIndex, poleProduktu, parent) {
     let parentElement = document.querySelector(parent + " .soupis");
-    let endIndex = startIndex + 6;
+    let endIndex = startIndex + 100;
     let template = document.getElementById("template-kosik").innerHTML;
 
     for(let i = startIndex; i < endIndex; i++) {
@@ -50,6 +50,7 @@ function displayKosik(startIndex, poleProduktu, parent) {
         navrh = navrh.replace('id="soupis"', `id="${produkt.id}"`);
 
         parentElement.insertAdjacentHTML("beforeend", navrh)
+        
     }
 }
 
@@ -138,6 +139,13 @@ function skryjTop() {
 
 }
 
+function zaplatitVisible() {
+    zaplat.classList.remove("hidden");
+}
+
+function zaplatitHidden() {
+    zaplat.classList.add("hidden");
+}
 // --------------- Košík ---------------
 
 
@@ -151,10 +159,8 @@ function pridatDoKosiku(id) {
         document.querySelector('.navKos').innerText = pocetVKosiku;
         span.classList.remove("hidden");
         pridavejKosik(id);
-        cenaCelkem(); 
-        buyPizza.classList.remove("hidden");
-        buyPizza.showModal();
-        setTimeout(zavrit, 2000);
+        zaplatitVisible();
+
     } else {
         alert("Tuto položku již máte v košíku!!!");
     }
@@ -226,7 +232,12 @@ function uberPolozku(id) {
 
 function objednavka() {
     return Math.floor(Math.random() * 99) + 1;
+
   }
+
+  function objednavka2() {
+    return document.getElementById("objednavka").textContent;
+}
 
 
   // --------------- List ---------------
@@ -253,17 +264,34 @@ function objednavka() {
 }
 
   // --------------- Dialogs ---------------
-
-
-
-  function zaplatit() {
-    zaplatiDialog.classList.remove("hidden");
-    zaplatiDialog.showModal();
+    
+function openPopup(){ 
+        popup.classList.add("open-popup");
+}
+    
+function closePopup() {
+        popup.classList.remove("open-popup");
 }
 
-function zavrit() {
-    buyPizza.close();
-    buyPizza.classList.add("hidden");
-    zaplatiDialog.close();
-    zaplatiDialog.classList.add("hidden");
-  }
+  // --------------- Zaplatit ---------------
+
+  function zaplatit() {
+    let kosik = document.querySelectorAll('.soupis');
+
+    kosik.forEach(function(item, index) {
+        if (index !== 0) {
+            item.classList.add("hidden");
+        }
+    });
+
+    idVKosiku = [];
+    pocetVKosiku = 0;
+
+    let span = document.getElementById("span");
+    span.classList.add("hidden");
+
+}
+
+function refresh() {
+    location.reload();
+}
