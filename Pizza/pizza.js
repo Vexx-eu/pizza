@@ -156,7 +156,7 @@ domu.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     zobrazVyber(vyber);
-
+    zobrazTop(topx);
 });
 
 menu.addEventListener("click", function() {
@@ -171,7 +171,7 @@ menu.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     zobrazVyber(vyber);
-
+    zobrazTop(topx);
 });
 
 kontakt.addEventListener("click", function() {
@@ -186,7 +186,7 @@ kontakt.addEventListener("click", function() {
     skryjDetail3(detail3);
     skryjDetail6(detail6);
     zobrazVyber(vyber);
-
+    zobrazTop(topx);
 });
 
 // -------    Zaplatit    --------
