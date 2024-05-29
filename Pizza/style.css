@@ -221,15 +221,22 @@ p {
     font-weight: 200;
 }
 .kosik {
-    padding-top: 140px;
+    padding-top: 190px;
     padding-bottom: 30px;
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
-
+.kosikAll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 13px rgb(0, 0, 0);
+    border-radius: 7px;
+}
 
 .soupis {
     display: flex;
@@ -271,18 +278,16 @@ th{
 }
 
 .list {
-    box-shadow: 0 0 13px rgb(0, 0, 0);
-    border-radius: 7px;
     padding: 20px;
     width: 500px;
     display: flex;
     flex-direction: column;
+
 }
 
 .total {
     padding: 20px 0px;
     border-top: 1px solid black;
-    border-bottom:  1px solid black;
     margin: 25px;
 }
 .total div {
@@ -310,7 +315,6 @@ th{
 
 .list a {
     width: 200px;
-    margin: 20px 0px 0px 0px;
     align-self: center;
 }
 .list h2 {
@@ -387,7 +391,6 @@ form {
     border-radius: 10px;
     text-decoration: none;
     display: flex;
-    margin: 10px 0px 0px 0px;
     color: white;
     justify-content: center;
     align-items: center;
@@ -505,12 +508,9 @@ li:empty {
 }
 .soupis{
     cursor: pointer;
+    padding: 0px 40px;
 }
-.soupis:first-child{
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(58, 58, 58);
-    padding: 40px;
-}
+
 .sect4{
     background-color: rgb(32, 32, 32);
     display: flex;

@@ -75,9 +75,10 @@
                 <!------  Košík   ------> 
 
     <section id="kosik" class="kosik hidden">
-            <article class="soupis">
-                <table>
-                    <tr class="tabPrvni">
+        <div class="kosikAll">
+            <article class="soupis hidden" id="soupis">
+                <table style="padding: 0px 40px;">
+                    <tr class="tabPrvni " >
                         <th>Produkt</th>
                         <th>Popis</th>
                         <th>Cena</th>
@@ -85,10 +86,10 @@
                     </tr>
                 </table>
             </article>
-            <article class="list">
+            <article class="list" id="total">
                 <div class="objn-cislo">
                 <h2>Objednávka číslo <span id="objednavka"></span></h2></div>
-                <div class="total">
+                <div class="total" id="totalis">
                     <div class="first">
                         <p>Zboží celkem</p>
                         <p><span id="celkem"></span> Kč</p>
@@ -128,6 +129,7 @@
                 </div>
                 <a href="#" class="zaplat hidden" id="zaplatit" onclick="openPopup()">Zaplatit</a>
             </article>
+        </div>
     </section>
 
                     <!------  Detail   ------> 

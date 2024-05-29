@@ -166,6 +166,10 @@ function pridatDoKosiku(id) {
         idVKosiku.push(id);
         document.querySelector('.navKos').innerText = pocetVKosiku;
         span.classList.remove("hidden");
+        soupis.classList.remove("hidden");
+        total.style.borderLeft = "1px solid black";
+        total.style.marginLeft = "50px ";
+        totalis.style.borderBottom = "1px solid black";
         pridavejKosik(id);
         zaplatitVisible();
 
@@ -202,6 +206,11 @@ function odstranPolozku(id) {
         x.classList.add("hidden");
         if (pocetVKosiku === 0) {
             span.classList.add("hidden");
+            soupis.classList.add("hidden");
+            zaplat.classList.add("hidden");
+            total.style.border = "none";
+            total.style.margin = "0px";
+            totalis.style.borderBottom = "none";
         }
         cenaCelkem();
     }

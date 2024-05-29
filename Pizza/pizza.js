@@ -41,6 +41,9 @@ let cisloy = document.getElementById("objednavka2");
 
 let popup = document.getElementById("popup");
 let zaplat = document.getElementById("zaplatit");    
+let soupis = document.getElementById("soupis");
+let total = document.getElementById("total");
+let totalis = document.getElementById("totalis");
 
 let idVKosiku = []; 
 let pocetVKosiku = 0; 
