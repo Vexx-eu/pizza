@@ -556,13 +556,7 @@ li:empty {
 .btm3{
     margin-top: 20px;
   }
-.container{ width: 100%;
-    height: 100vh; background: #3c5077;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    .btn{
+.btn{
     padding: 10px 60px;
     background: #fff;
     border: 0;
@@ -574,7 +568,8 @@ li:empty {
     }
 .popup{
     width: 400px;
-    background: #a4a4a4; border-radius: 6px;
+    background: #a4a4a4; 
+    border-radius: 6px;
     position: absolute;
     top: 0%;
     left: 50%;
@@ -583,12 +578,12 @@ li:empty {
     padding: 30px 30px;
     color: #333;
     visibility: hidden;
-    transition: transform 0.7s, top 0.7s;
+    transition: transform .5s, top .5s;
 }
 .open-popup{
     visibility: visible;
-    top: 80%;
-    transform: translate(-50%, -90%) scale(1);
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .popup img{
@@ -604,7 +599,11 @@ li:empty {
     margin: 30px 0 10px;
     }
 .popup button{
-    width: 100%; margin-top: 50px; padding: 10px 0; background: #6fd649; color: #fff;
+    width: 100%; 
+    margin-top: 30px; 
+    padding: 10px 0; 
+    background: #6fd649; 
+    color: #fff;
     border: 0;
     outline: none;
     border-radius: 4px;

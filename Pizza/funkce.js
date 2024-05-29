@@ -138,6 +138,14 @@ function skryjTop() {
     topx.classList.add("hidden");
 
 }
+function skryjHeader() {
+    header.classList.add("hidden");
+
+}
+function skryjFooter() {
+    footer.classList.add("hidden");
+
+}
 
 function zaplatitVisible() {
     zaplat.classList.remove("hidden");
