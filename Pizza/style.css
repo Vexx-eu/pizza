@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;800&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Gabarito', sans-serif;
-  font-size: 15px;
-  margin-top: 150px;
-  background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 15px;
+    margin-top: 135px;
+    background-color: white;
 }
 header{
     position: fixed;
@@ -15,6 +15,7 @@ header{
     background: white;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25);
     z-index: 1000;
+    height: 135px;
 }
 nav{
     display: flex;
@@ -22,7 +23,6 @@ nav{
     padding: 10px 20px;
     justify-content: space-between;
 }
-
 nav div{
     display: flex;
     flex-direction: row;
@@ -36,8 +36,7 @@ nav a {
     margin: 10px;
     font-weight: 300;
   }
-
-  .register, .login{
+.register, .login{
     font-size: 16px;
     padding: 15px 20px;
     border: none;
@@ -45,12 +44,10 @@ nav a {
     cursor: pointer;
     margin: 13px;
   }
-
-  .register {
+.register {
     background-color: #8BC34A;
     color: white;
 }
-
 .navKos{
     position: absolute;
     top: 68px;
@@ -69,7 +66,6 @@ nav a {
     margin: 15px;
     margin-left: 30px;
 }
-
 .login {
     background-color: #E0E0E0;
     color: black;
@@ -79,19 +75,14 @@ nav a {
     background-color: #7cda11;
     transition: .4s;
 }
-
 .login:hover {
     background-color: #ccc5c5;
     transition: .4s;
 }
-
 .navigace a:hover{
     color: red;
     transition: 0.3s;
 }
-
-
-
 section {
     padding: 30px 5%;
     padding-bottom: 0px;
@@ -111,9 +102,14 @@ section {
 }
 p {
     color: rgb(0, 0, 0);
-    
 }
-
+/*
+.top img {
+    scale: 1.1;
+    width: 100%;
+    padding: 0px;
+}
+*/
 .top img {
     width: 100%;
     max-width: 70%;
@@ -130,6 +126,7 @@ p {
     flex: 1;
     align-items: center;
 }
+
 .produkt {
     width: 250px;
     min-width: 250px;
@@ -181,7 +178,6 @@ p {
     padding-bottom: 20px;
     padding-top: 0px;
 }
-
 .food article, .drinks article {
     margin: 15px;
 }
@@ -212,7 +208,6 @@ p {
 .drinks{
     padding-top: 0px;
 }
-
 .buy {
     align-items: center;
 }
@@ -234,17 +229,14 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 13px rgb(0, 0, 0);
+    box-shadow: 0 0 13px rgb(32, 32, 32);
     border-radius: 7px;
 }
-
 .soupis {
     display: flex;
     flex-direction: column;
     align-self: start;
 }
-
-
 th, td{
     height: 60px;
     width: 120px;
@@ -254,7 +246,6 @@ th, td{
     flex-direction: row;
     justify-content: center;
     font-size: 15px;
-
 }
 tr {
     display: flex;
@@ -263,29 +254,25 @@ tr {
     border-radius: 7px;
     margin: 6px;
 }
-.tabPrvni{
+.tabPrvni {
     box-shadow: none;
     border-radius: 0px;
 }
-.tabPrvni th{
+.tabPrvni th {
     height: 30px;
 }
-th{
+th {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
-
 .kosik img {
     width: 80px;
 }
-
-.list {
+.udaje {
     padding: 20px;
     width: 500px;
     display: flex;
     flex-direction: column;
-
 }
-
 .total {
     padding: 20px 0px;
     border-top: 1px solid black;
@@ -296,7 +283,6 @@ th{
     flex-direction: row;
     justify-content: space-between;
 }
-
 .first p{
     margin: 0px;
     font-weight: 500;
@@ -313,8 +299,7 @@ th{
 .third p{
     font-size: 19px;
 }
-
-.list a {
+.udaje a {
     width: 200px;
     align-self: center;
 }
@@ -325,67 +310,63 @@ th{
 .objn-cislo{
     align-self: center;
 }
-
 form {
     display: flex;
     flex-direction: column;
-
-  }
-  .formRow1-1{
+}
+.formRow1-1{
     width: 200px;
     border-radius: 10px 0px 0px 0px;
     border-right: none;
     border-bottom: none;
-  }
-  .formRow1-2{
+}
+.formRow1-2{
     width: 200px;
     border-radius: 0px 10px 0px 0px;
     border-bottom: none;
-  }
-  .formRow2-1{
+}
+.formRow2-1{
     width: 140px;
     border-radius: 0px 0px 0px 10px;
     border-right: none;
-  }
-  .formRow2-2{
+}
+.formRow2-2{
     width: 260px;
     border-radius: 0px 0px 10px 0px;
-  }
-  .formRow3-1{
+}
+.formRow3-1{
     width: 140px;
     border-radius: 10px 0px 0px 10px;
     border-right: none;
-  }
-  .formRow3-2{
+}
+.formRow3-2{
     width: 140px;
     border-radius: 0px;
     border-right: none;
-  }
-  .formRow3-3{
+}
+.formRow3-3{
     width: 75px;
     border-radius: 0px 10px 10px 0px;
-  }
-  .formRow4-1{
+}
+.formRow4-1{
     width: 450px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: none;
-  }
-  .formRow4-2{
+}
+.formRow4-2{
     width: 200px;
     border-radius: 0px 0px 0px 10px;
     border-right: none;
-  }
-  .formRow4-3{
+}
+.formRow4-3{
     width: 200px;
     border-radius: 0px 0px 10px 0px;
-  }
-  input{
+}
+input{
     padding: 15px;
     display: inline-block;
     border: 1px solid rgb(66, 66, 66);
-  }
-
-
+}
 .zaplat{
     background-color: rgb(255, 128, 0);
     padding: 10px;
@@ -396,8 +377,6 @@ form {
     justify-content: center;
     align-items: center;
 }
-
-
 .detail h1{
     font-size: 30px;
 }
@@ -409,7 +388,6 @@ form {
     padding: 80px 10% 0px 10%;
     align-items: center;
 }
-
 li:empty {
     display: none;
 }
@@ -426,7 +404,6 @@ li:empty {
     justify-content: space-between;
     align-items: center;
 }
-
 .split:last-child{
     padding-right: 60px;
 }
@@ -438,7 +415,6 @@ li:empty {
     margin-left: 100px;
     max-width: 50%; 
 }
-
 .cena {
     display: flex;
     flex-direction: row;
@@ -446,33 +422,27 @@ li:empty {
     font-size: 25px;
     margin-bottom: 10px;
 }
-
 .popis p {
     margin-bottom: 15px;
 }
-
 .mnozstvi{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 5px;
 }
-
 .mnozstvi p{
     padding: 10px;
 }
-
 .mnozstvi a{
     text-decoration: none;
     color: #000;
     font-size: 20px;
 }
-
 .vyber{
     justify-content: center;
     padding-top: 180px;
 }
-
 .vyber button{
     margin: 20px;
     font-size: 20px;
@@ -489,15 +459,18 @@ li:empty {
     cursor: pointer;
     margin: 20px;
     transition: .4s;
-  }
-  #vse{
+}
+#vse{
     background-color: orange;
-  }
+}
 .vyber button:hover {
     background-color: #ececec;
     box-shadow: 0 0 10px rgb(58, 58, 58);
 }
 .hidden {
+    display: none;
+}
+.schovanej {
     display: none;
 }
 .zoomShow{
@@ -511,7 +484,6 @@ li:empty {
     cursor: pointer;
     padding: 0px 40px;
 }
-
 .sect4{
     background-color: rgb(32, 32, 32);
     display: flex;
@@ -519,44 +491,44 @@ li:empty {
     padding: 50px;
     padding-bottom: 0px;
     justify-content: space-evenly;
-  }
+}
 .sect4 a{
     color: lightgray;
     font-size: 14px;
     margin: 6px;
     text-decoration: none;
     justify-content: center;
-  }
+}
 .sect4 h1{
     text-align: left;
     font-size: 18px;
     font-weight: 400;
     color: white;
     margin-top: 0px;
-  }
+}
 .sect4 article{
     margin: 50px;
     display: flex;
     margin-right: 50px;
     margin-left: 50px;
-  }
+}
 .btm1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
 .sect4 div{
     display: flex;
     flex-direction: column;
     padding: 10px;
     align-items: baseline;
-  }
+}
 .btmlogo{
     width: 200px;
-  }
+}
 .btm3{
     margin-top: 20px;
-  }
+}
 .btn{
     padding: 10px 60px;
     background: #fff;
@@ -566,7 +538,7 @@ li:empty {
     font-size: 22px;
     border-radius: 30px;
     font-weight: 500;
-    }
+}
 .popup{
     width: 400px;
     background: #a4a4a4; 
@@ -579,26 +551,24 @@ li:empty {
     padding: 30px 30px;
     color: #333;
     visibility: hidden;
-    transition: transform .5s, top .5s;
+    transition: transform .4s, top .4s;
 }
 .open-popup{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 }
-
 .popup img{
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 .popup h2{
     font-size: 38px;
     font-weight: 500;
     margin: 30px 0 10px;
-    }
+}
 .popup button{
     width: 100%; 
     margin-top: 30px; 
@@ -611,4 +581,4 @@ li:empty {
     font-size: 18px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    }
+}

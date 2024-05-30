@@ -10,8 +10,8 @@ function displayJidlo(startIndex, poleProduktu, parent) {
         let produkt = poleProduktu[i];
         let navrh = template.template(produkt);
 
-        navrh = navrh.replace('id="uniqueID"', `id="${produkt.id}"`);
-        navrh = navrh.replace('id="uniqueIdDetail"', `id="${produkt.id}"`);
+        navrh = navrh.replace("id='uniqueID'", `id="${produkt.id}"`);
+        navrh = navrh.replace("id='uniqueIdDetail'", `id="${produkt.id}"`);
         
         parentElement.insertAdjacentHTML("beforeend", navrh);
     }
@@ -29,7 +29,7 @@ function displayDetail(startIndex, poleProduktu, parent) {
         let produkt = poleProduktu[i];
         let navrh = template.template(produkt);
 
-        navrh = navrh.replace('id="zoom"', `id="zoom-${produkt.id}"`);
+        navrh = navrh.replace("id='zoom'", `id="zoom-${produkt.id}"`);
 
         parentElement.insertAdjacentHTML("beforeend", navrh);
     }
@@ -47,12 +47,13 @@ function displayKosik(startIndex, poleProduktu, parent) {
         let produkt = poleProduktu[i];
         let navrh = template.template(produkt)
 
-        navrh = navrh.replace('id="soupis"', `id="${produkt.id}"`);
+        navrh = navrh.replace("id='soupis'", `id="${produkt.id}"`);
 
         parentElement.insertAdjacentHTML("beforeend", navrh)
         
     }
 }
+
 
 String.prototype.template = function (d) {
 	return this.replace(/\{([^\}]+)\}/g, function (m, n) {
@@ -97,12 +98,12 @@ function hideSection(section) {
 }
 
 function ZobrazKosik() {
-    kosikx.classList.remove("hidden");
+    kosikx.classList.remove("schovanej");
 
 }
 
 function skryjKosik() {
-    kosikx.classList.add("hidden");
+    kosikx.classList.add("schovanej");
 
 }
 
@@ -162,11 +163,13 @@ function pridatDoKosiku(id) {
     console.log(id);
 
     if (!idVKosiku.includes(id)) {
-        pocetVKosiku++;
-        idVKosiku.push(id);
-        document.querySelector('.navKos').innerText = pocetVKosiku;
         span.classList.remove("hidden");
         soupis.classList.remove("hidden");
+        cenaCelkem();
+        pocetVKosiku++;
+        idVKosiku.push(id);
+        document.querySelector(".navKos").innerText = pocetVKosiku;
+
         total.style.borderLeft = "1px solid black";
         total.style.marginLeft = "50px ";
         totalis.style.borderBottom = "1px solid black";
@@ -185,11 +188,11 @@ function pridavejKosik(id) {
 
     if (x) {
         x.classList.remove("hidden");
-        let cislo = x.querySelector('.cislo');
-        let cena = x.querySelector('.cenax');
-        let mnozstvi = cena.getAttribute('data-cena');
+        let cislo = x.querySelector(".cislo");
+        let cena = x.querySelector(".cenax");
+        let mnozstvi = cena.getAttribute("data-cena");
         cislo.innerText = 1;
-        cena.innerText = mnozstvi + ' Kč';
+        cena.innerText = mnozstvi + " Kč";
         cenaCelkem();
     }
 
@@ -200,7 +203,7 @@ function odstranPolozku(id) {
 
     if (idVKosiku.includes(id), x) {
         pocetVKosiku--;
-        document.querySelector('.navKos').innerText = pocetVKosiku;
+        document.querySelector(".navKos").innerText = pocetVKosiku;
         idVKosiku.splice(idVKosiku.indexOf(id), 1); 
         alert("Položka byla odebrána z košíku!!!");
         x.classList.add("hidden");
@@ -219,30 +222,30 @@ function odstranPolozku(id) {
 
 function pridejPolozku(id) {
     let x = document.querySelector(`#kosik-${id}`);
-    let cislo = x.querySelector('.cislo');
-    let cena = x.querySelector('.cenax');
-    let mnozstvi = cena.getAttribute('data-cena');
+    let cislo = x.querySelector(".cislo");
+    let cena = x.querySelector(".cenax");
+    let mnozstvi = cena.getAttribute("data-cena");
     let aktualni = parseInt(cislo.innerText, 10);
 
     if (aktualni < 10) {
         aktualni++;
         cislo.innerText = aktualni;
-        cena.innerText = mnozstvi * aktualni + ' Kč';
+        cena.innerText = mnozstvi * aktualni + " Kč";
         cenaCelkem();
     }
 }
 
 function uberPolozku(id) {
     let x = document.querySelector(`#kosik-${id}`);
-    let cislo = x.querySelector('.cislo');
-    let cena = x.querySelector('.cenax');
-    let mnozstvi = cena.getAttribute('data-cena');
+    let cislo = x.querySelector(".cislo");
+    let cena = x.querySelector(".cenax");
+    let mnozstvi = cena.getAttribute("data-cena");
     let aktualni = parseInt(cislo.innerText, 10);
 
     if (aktualni > 1) {
         aktualni--;
         cislo.innerText = aktualni;
-        cena.innerText = mnozstvi * aktualni + ' Kč';
+        cena.innerText = mnozstvi * aktualni + " Kč";
         cenaCelkem();
     }
 }
@@ -257,14 +260,15 @@ function objednavka() {
 }
 
 
-  // --------------- List ---------------
+  // --------------- Udaje ---------------
+
   function cenaCelkem() {
     let cenaCelkem = 0;
 
-    let ceny = document.querySelectorAll('.cenax');
+    let ceny = document.querySelectorAll(".cenax");
 
     ceny.forEach(function(zavreno) {
-        if (!zavreno.closest('.hidden')) {
+        if (!zavreno.closest(".hidden")) {
             let cena = parseFloat(zavreno.textContent);
             if (!isNaN(cena)) {
                 cenaCelkem += cena;
@@ -293,7 +297,7 @@ function closePopup() {
   // --------------- Zaplatit ---------------
 
   function zaplatit() {
-    let kosik = document.querySelectorAll('.soupis');
+    let kosik = document.querySelectorAll(".soupis");
 
     kosik.forEach(function(item, index) {
         if (index !== 0) {

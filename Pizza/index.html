@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +16,13 @@
 
                 <!------  Nav   ------> 
 
-    <header class="nic" id="header">
+    <header id="header">
         <nav>
-            <div class="logo">
-                <img src="img/logo2.png" alt="" style="width: 100px;" hre></a>
-            </div>
+            <div class="logo"><img src="img/logo2.png" alt="" style="width: 100px;"></a></div>
             <div class="navigace">
                 <a href="#" id="domu" style="color: #ff0000;">DOMŮ</a>
                 <a href="#vyber" id="menu">MENU</a>
-                <a href="#footer" id="kontakt">KONTAKT</a>
-            </div>
+                <a href="#footer" id="kontakt">KONTAKT</a></div>
             <div>
                 <button class="button register">Registrovat</button>
                 <button class="button login">Přihlásit se</button>
@@ -34,25 +30,31 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#5f6368" class="navIco">
                     <path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
                 </svg>
-                <span class="navKos hidden" id="span">0</span></a>
-            </div>
-        
+            <span class="navKos hidden" id="span">0</span></a></div>
         </nav>
-    </header>
+        </header>
 
                 <!------  Top   ------> 
 
-    <section class="top" id="top">
-        <article class="uvodni">
-            <h1>Dopřejte si dokonalý zážitek z naší pizzy!</h1>
-            <p>Čerstvé suroviny, tradiční receptury a láska k pečení – to vše najdete v každém kousku naší pizzy. Užijte
-                si harmonii chutí s rajčatovou omáčkou, jemnou mozzarellou, pikantním pepperoni, černými olivami a
-                čerstvou rukolou.</p>
-        </article>
-        <article class="img1">
-            <img src="img/pizza.jpg" alt="">
-        </article>
-    </section>
+                <section class="top" id="top">
+                    <article class="uvodni">
+                        <h1>Dopřejte si dokonalý zážitek z naší pizzy!</h1>
+                        <p>Čerstvé suroviny, tradiční receptury a láska k pečení – to vše najdete v každém kousku naší pizzy. Užijte
+                            si harmonii chutí s rajčatovou omáčkou, jemnou mozzarellou, pikantním pepperoni, černými olivami a
+                            čerstvou rukolou.</p>
+                    </article>
+                    <article class="img1">
+                        <img src="img/pizza.jpg" alt="">
+                    </article>
+                </section>
+
+<!--
+
+<div class="top" id="top">
+    <img src="img/sliderv1.jpg" alt="">
+</div>
+
+-->
 
                 <!------  Vyber   ------> 
 
@@ -60,25 +62,23 @@
         <button class="barva" id="jidlo">Jídlo</button>
         <button id="napoj">Nápoje</button>
         <button id="vse">Vše</button>
+    </section>
 
                 <!------  Food   ------> 
 
-    </section>
-    <section id="food" class="food">
-    </section>
+    <section class="food" id="food"></section>
 
                 <!------  Drinks   ------> 
 
-    <section id="drinks" class="drinks">
-    </section>
+    <section class="drinks" id="drinks"></section>
 
                 <!------  Košík   ------> 
 
-    <section id="kosik" class="kosik hidden">
+    <section  class="kosik schovanej" id="kosik">
         <div class="kosikAll">
             <article class="soupis hidden" id="soupis">
                 <table style="padding: 0px 40px;">
-                    <tr class="tabPrvni " >
+                    <tr class="tabPrvni" >
                         <th>Produkt</th>
                         <th>Popis</th>
                         <th>Cena</th>
@@ -86,7 +86,7 @@
                     </tr>
                 </table>
             </article>
-            <article class="list" id="total">
+            <article class="udaje" id="total">
                 <div class="objn-cislo">
                 <h2>Objednávka číslo <span id="objednavka"></span></h2></div>
                 <div class="total" id="totalis">
@@ -134,13 +134,12 @@
 
                     <!------  Detail   ------> 
     
-    <section class="detail" id="detail">
-    </section>
+    <section class="detail" id="detail"></section>
 
                     <!------  Footer   ------> 
-    <div id="footer">
-    <section class="sect4">
 
+    <div id="footer">
+        <section class="sect4">
         <article class="btm1">
             <a ><img src="img/logo2.png" alt="" class="btmlogo"></a>
               </article>
@@ -185,8 +184,17 @@
                 <a >10:30 - 21:30</a>
                 <a >11:00 - 20:30</a>
             </div>
-                </article>
+        </article>
     </section>
+</div>
+
+                    <!------  Dialogs   ------> 
+
+<div class="popup" id="popup">
+    <img src="img/tick.png">
+    <h2>Děkujeme za Vaši objednávku číslo <span id="objednavka2"></span></h2>
+    <p>Vaše informace byly úspěšně zpracovány.</p> 
+    <button type="button" onclick="closePopup(), refresh()" >OK</button>
 </div>
 
                     <!------  Scripts   ------> 
@@ -228,21 +236,14 @@
                     <li>{sl5}</li>
                     <li>{sl6}</li>
                     <li>{sl7}</li>
-                </ul>
-            </div><div>
+                </ul></div><div>
                 <a href="#kosik" class="buy" id="buyButton" onclick="pridatDoKosiku({id}), pridavejKosik({id})">{buy}</a>
-            </div>
-        </div>
-    </div>
-        </article> 
-    </div>
+            </div></div></div></article></div>
     </script>
 
     <script type="text/html" id="template-kosik">
         <article class="soupis hidden" id="kosik-{id}">
-            <table>
-        <tr>
-            <td>
+            <table><tr><td>
                 <img src="{image}" id="obr">
                 <td>{name}</td>
             <td data-cena="{cena}" class="cenax">{cena} Kč</td>
@@ -252,32 +253,8 @@
                     <p class="cislo" id="cislo">1</p>
                     <span class="material-symbols-outlined plus" id="plus" onclick="pridejPolozku({id})">add</span>
                     <span class="material-symbols-outlined" onclick="odstranPolozku({id})">delete</span>
-                </div></td>   
-        </tr>
-
-    </table>
-    </article>
-</script>
-
-                    <!------  Dialogs   ------> 
-
-                    
-
-<div class="popup" id="popup">
-    <img src="img/tick.png">
-    <h2>Děkujeme za Vaši objednávku číslo <span id="objednavka2"></span> !</h2>
-    <p>Vaše údaje byly úspěšně odeslány.</p> 
-    <button type="button" onclick="closePopup(), refresh()" >OK</button>
-    </div>
-
-<dialog id="zaplatiDialog" class="hidden">
-    <h1>Děkujeme za Objednávku</h1>
-    <button class="zavritDialog" onclick="zavrit()">Zavřít</button>
-</dialog>
-
-
-
-
+                </div></td></tr></table>
+        </article>
+    </script>
 </body>
-
 </html>
