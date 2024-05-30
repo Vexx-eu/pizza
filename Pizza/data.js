@@ -26,12 +26,22 @@ let pizzy = [
         "buy": "Koupit",
         "detail": "info"
     }
+    ,
+    {
+        "id": "4",
+        "name": "BBQ kuře",
+        "price": "159 Kč",
+        "description": "BBQ kuře je pizza s BBQ omáčkou a mozzarellou. Navrch se přidáva grilované kuře a kukuřice. ",
+        "image": "img/bbq.png",
+        "buy": "Koupit",
+        "detail": "info"
+    }
 ];
 
 
 let napoje = [
     {
-        "id": "4",
+        "id": "11",
         "name": "Coca-Cola",
         "price": "79 Kč",
         "description": "Coca-cola 1.5L",
@@ -40,7 +50,7 @@ let napoje = [
         "detail": ""
     },
     {
-        "id": "5",
+        "id": "12",
         "name": "Fanta",
         "price": "59 Kč",
         "description": "Fanta 1.5L",
@@ -49,7 +59,16 @@ let napoje = [
         "detail": ""
     },
     {
-        "id": "6",
+        "id": "13",
+        "name": "Sprite",
+        "price": "59 Kč",
+        "description": "Sprite 1.5L",
+        "image": "img/sprite.jpg",
+        "buy": "Koupit",
+        "detail": ""
+    },
+    {
+        "id": "14",
         "name": "Domácí limonáda",
         "price": "69 Kč",
         "description": "Domácí limonáda 0.75L",
@@ -110,7 +129,23 @@ let detail = [
         "buy": "Koupit",
     },
     {
-        "id": "6",
+        "id": "4",
+        "name": "BBQ kuře",
+        "price": "159 Kč",
+        "description": "BBQ kuřecí pizza je oblíbená pizza s tenkým těstem, BBQ omáčkou a mozzarellou. Navrch se přidávají kousky grilovaného kuřete, červená cibule a kukuřice. Tento pokrm je ceněný pro svou lahodnou kombinaci sladkých a kouřových chutí.",
+        "slozeni": "Složení:",
+        "sl1": "Čerstvé těsto",
+        "sl2": "Rajčatová omáčka",
+        "sl3": "Mozzarella",
+        "sl4": "Kvalitní šunka",
+        "sl5": "Grilované kuřecí maso",
+        "sl6": "Kukuřice",
+        "sl7": "Červená cibule",
+        "image": "img/bbq.png",
+        "buy": "Koupit",
+    },
+    {
+        "id": "14",
         "name": "Domácí limonáda",
         "price": "69 Kč",
         "description": "Naše domácí limonáda je vytvořena z čerstvých ingrediencí, které zaručují jedinečnou kvalitu a chuť. Každá sklenice obsahuje čerstvě vymačkanou šťávu z nejlepších citronů, smíchanou s přesně naměřeným množstvím kvalitního cukru a osvěžující vodou. Bez umělých barviv, konzervantů či přísad, naše limonáda je zárukou čisté a přírodní chuti, která osvěží vaše smysly.",
@@ -154,25 +189,39 @@ let kosik = [
     },
     {
         "id": "4",
+        "name": "BBQ kuře",
+        "cena": "159",
+        "buy": "Koupit",
+        "image": "img/bbq.png",
+    },
+    {
+        "id": "11",
         "name": "Coca-Cola",
         "cena": "79",
         "buy": "Koupit",
         "image": "img/cola.jpg",
     },
     {
-        "id": "5",
+        "id": "12",
         "name": "Fanta",
         "cena": "59",
         "buy": "Koupit",
         "image": "img/fanta.jpg",
     },
     {
-        "id": "6",
+        "id": "13",
+        "name": "Sprite",
+        "cena": "59",
+        "buy": "Koupit",
+        "image": "img/sprite.jpg",
+    },
+    {
+        "id": "14",
         "name": "Domácí limonáda",
         "cena": "69",
         "buy": "Koupit",
         "image": "img/limonada.jpg",
-    },
+    }
 
 
 ];

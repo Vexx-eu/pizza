@@ -107,21 +107,11 @@ function skryjKosik() {
 
 }
 
-function skryjDetail1() {
-    detail1.classList.remove("zoomShow");
-
-}
-function skryjDetail2() {
-    detail2.classList.remove("zoomShow");
-
-}
-function skryjDetail3() {
-    detail3.classList.remove("zoomShow");
-
-}
-function skryjDetail6() {
-    detail6.classList.remove("zoomShow");
-
+function skryjDetaily() {
+    let detaily = document.querySelectorAll('[id^="detail-"]');
+    detaily.forEach(detail => {
+        detail.classList.remove("zoomShow");
+    });
 }
 function skryjVyber() {
     vyber.classList.add("hidden");

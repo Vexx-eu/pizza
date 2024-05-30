@@ -21,19 +21,13 @@ let domu = document.getElementById("domu");
 let menu = document.getElementById("menu");
 let kontakt = document.getElementById("kontakt");
 
-let detail1 = document.getElementById("detail-1");
-let detail2 = document.getElementById("detail-2");
-let detail3 = document.getElementById("detail-3");
-let detail6 = document.getElementById("detail-6");
 let vyber = document.getElementById("vyber");
 let topx = document.getElementById("top");
-
-
 
 let cislo = document.getElementById("objednavka");
     cislo.textContent = objednavka();
 
-    let cisloy = document.getElementById("objednavka2");
+let cisloy = document.getElementById("objednavka2");
     cisloy.textContent = objednavka2();
 
 let popup = document.getElementById("popup");
@@ -51,10 +45,7 @@ document.getElementById("zaplatit").addEventListener("click", zaplatit);
 jidlo.addEventListener("click", function() {
     showSection(food);
     hideSection(drinks);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     jidlo.style.backgroundColor = "orange";
     napoj.style.backgroundColor = "white";
     vse.style.backgroundColor = "white";
@@ -63,10 +54,7 @@ jidlo.addEventListener("click", function() {
 napoj.addEventListener("click", function() {
     showSection(drinks);
     hideSection(food);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     napoj.style.backgroundColor = "orange";
     jidlo.style.backgroundColor = "white";
     vse.style.backgroundColor = "white";
@@ -75,10 +63,7 @@ napoj.addEventListener("click", function() {
 vse.addEventListener("click", function() {
     showSection(food);
     showSection(drinks);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     vse.style.backgroundColor = "orange";
     jidlo.style.backgroundColor = "white";
     napoj.style.backgroundColor = "white";
@@ -93,10 +78,7 @@ navKos.addEventListener("click", function() {
     hideSection(jidlo);
     hideSection(napoj);
     hideSection(vse);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     skryjVyber(vyber);
     skryjTop(topx);
 });
@@ -110,10 +92,7 @@ domu.addEventListener("click", function() {
     showSection(jidlo);
     showSection(napoj);
     showSection(vse);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     zobrazVyber(vyber);
     zobrazTop(topx);
 });
@@ -125,10 +104,7 @@ menu.addEventListener("click", function() {
     showSection(jidlo);
     showSection(napoj);
     showSection(vse);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     zobrazVyber(vyber);
     zobrazTop(topx);
 });
@@ -140,10 +116,7 @@ kontakt.addEventListener("click", function() {
     showSection(jidlo);
     showSection(napoj);
     showSection(vse);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     zobrazVyber(vyber);
     zobrazTop(topx);
 });
@@ -157,10 +130,7 @@ zaplat.addEventListener("click", function() {
     hideSection(jidlo);
     hideSection(napoj);
     hideSection(vse);
-    skryjDetail1(detail1);
-    skryjDetail2(detail2);
-    skryjDetail3(detail3);
-    skryjDetail6(detail6);
+    skryjDetaily();
     skryjVyber(vyber);
     skryjTop(topx);
     skryjFooter(footer);
