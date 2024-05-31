@@ -24,6 +24,7 @@ let kontakt = document.getElementById("kontakt");
 
 let vyber = document.getElementById("vyber");
 let topx = document.getElementById("top");
+let komplet = document.getElementById("komplet");
 
 let cislo = document.getElementById("objednavka");
     cislo.textContent = objednavka();

@@ -171,12 +171,12 @@ function pridatDoKosiku(id) {
         pocetVKosiku++;
         idVKosiku.push(id);
         document.querySelector(".navKos").innerText = pocetVKosiku;
-
         total.style.borderLeft = "1px solid black";
         total.style.marginLeft = "50px ";
         totalis.style.borderBottom = "1px solid black";
         pridavejKosik(id);
         zaplatitVisible();
+        komplet.classList.remove("hidden");
 
     } else {
         alert("Tuto položku již máte v košíku!!!");
@@ -215,6 +215,7 @@ function odstranPolozku(id) {
             total.style.border = "none";
             total.style.margin = "0px";
             totalis.style.borderBottom = "none";
+            komplet.classList.add("hidden");
         }
         cenaCelkem();
     }
@@ -280,7 +281,6 @@ function objednavka() {
     celkem.textContent = cenaCelkem;
 
     let cenaKomplet = cenaCelkem + 70;
-    let komplet = document.getElementById("komplet");
     komplet.textContent = cenaKomplet;
 }
 

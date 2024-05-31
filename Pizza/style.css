@@ -93,10 +93,10 @@ section {
     flex-wrap: wrap;
     align-items: center;
 }
-.uvodni {
+.topText {
     text-align: center;
 }
-.uvodni h1 {
+.topText h1 {
     margin: 5px 0px;
     font-size: 2.5em;
 }
@@ -108,14 +108,17 @@ p {
     max-width: 70%;
 }
 .imgTop{
-    animation: rotation 30s infinite linear;
+    animation: rotation 20s infinite linear;
 }
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(.9);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.25);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(.9);
   }
 }
 .top {
@@ -123,6 +126,7 @@ p {
     margin-top: 25px;
     align-items: center;
     justify-content: center;
+    padding-top: 70px;
 }
 .top article {
     display: flex;
