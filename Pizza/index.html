@@ -38,23 +38,13 @@
 
                 <section class="top" id="top">
                     <article class="uvodni">
-                        <h1>Dopřejte si dokonalý zážitek z naší pizzy!</h1>
-                        <p>Čerstvé suroviny, tradiční receptury a láska k pečení – to vše najdete v každém kousku naší pizzy. Užijte
-                            si harmonii chutí s rajčatovou omáčkou, jemnou mozzarellou, pikantním pepperoni, černými olivami a
-                            čerstvou rukolou.</p>
+                        <h1>Dokonalý zážitek z naší pizzy!</h1>
+                        <p>Vítejte v Pizza Studiu, kde se pizza mění v umění. Sestavte si svou vlastní mistrovskou pizzu z neomezené nabídky čerstvých surovin a chutí. Každý plátek je přesně podle vašich představ. Užijte si jedinečný zážitek a vytvořte si dokonalou pizzu v příjemném prostředí. Pizza Studio – vaše plátno, vaše pizza.</p>
                     </article>
                     <article class="img1">
-                        <img src="img/pizza.jpg" alt="">
+                        <img src="img/pizza1.png" alt="" class="imgTop">
                     </article>
                 </section>
-
-<!--
-
-<div class="top" id="top">
-    <img src="img/sliderv1.jpg" alt="">
-</div>
-
--->
 
                 <!------  Vyber   ------> 
 
@@ -77,13 +67,11 @@
     <section  class="kosik schovanej" id="kosik">
         <div class="kosikAll">
             <article class="soupis hidden" id="soupis">
-                <table style="padding: 0px 40px;">
-                    <tr class="tabPrvni" >
+                <table style="padding: 0px 40px;"><tr class="tabPrvni" >
                         <th>Produkt</th>
                         <th>Popis</th>
                         <th>Cena</th>
-                        <th>Množství</th>
-                    </tr>
+                        <th>Množství</th></tr>
                 </table>
             </article>
             <article class="udaje" id="total">
@@ -209,7 +197,7 @@
             <p>{description}</p>
             <div class="bottom">
                 <a href="#kosik" class="buy" onclick="pridatDoKosiku({id}), pridavejKosik({id})">{buy}</a>
-            <a href="#detail">
+            <a href="#">
                 <span class="material-symbols-outlined" id="uniqueIdDetail" onclick="Detail({id})">{detail}</span></a>
             </div>
         </article>
@@ -221,7 +209,9 @@
             <img src="{image}">
         </article>
         <article class="det2">
+            <div class="detailClose">
             <h1>{name}</h1>
+            <a href="#"><span class="material-symbols-outlined" id="zpet" onclick="zpet() ">close</span></a></div>
             <p class="cena">{price}</p>
             <div class="popis">
                 <p>{description}</p>
@@ -237,7 +227,7 @@
                     <li>{sl6}</li>
                     <li>{sl7}</li>
                 </ul></div><div>
-                <a href="#kosik" class="buy" id="buyButton" onclick="pridatDoKosiku({id}), pridavejKosik({id})">{buy}</a>
+                <a class="buy" id="buyButton" onclick="pridatDoKosiku({id}), pridavejKosik({id})">{buy}</a>
             </div></div></div></article></div>
     </script>
 

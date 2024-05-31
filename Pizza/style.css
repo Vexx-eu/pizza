@@ -103,16 +103,20 @@ section {
 p {
     color: rgb(0, 0, 0);
 }
-/*
-.top img {
-    scale: 1.1;
-    width: 100%;
-    padding: 0px;
-}
-*/
 .top img {
     width: 100%;
     max-width: 70%;
+}
+.imgTop{
+    animation: rotation 30s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .top {
     display: flex;
@@ -126,7 +130,9 @@ p {
     flex: 1;
     align-items: center;
 }
-
+.top h1{
+    color: rgb(238, 127, 0);
+}
 .produkt {
     width: 250px;
     min-width: 250px;
@@ -388,6 +394,17 @@ input{
     padding: 80px 10% 0px 10%;
     align-items: center;
 }
+.detailClose{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.detailClose span{
+    padding-right: 100px;
+    font-weight: 800;
+    cursor: pointer;
+}  
 li:empty {
     display: none;
 }

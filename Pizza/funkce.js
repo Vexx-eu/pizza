@@ -76,6 +76,10 @@ function Detail(id) {
         let element = smazat[i];
         element.classList.add("hidden")
         element.classList.remove("zoomShow");
+        hideSection(food);
+        hideSection(drinks);
+        skryjVyber(vyber);
+        skryjTop(topx);
     }
     
     if (x) {
@@ -145,8 +149,16 @@ function zaplatitVisible() {
 function zaplatitHidden() {
     zaplat.classList.add("hidden");
 }
-// --------------- Košík ---------------
+function zpet() {
+    skryjKosik(kosikx);
+    showSection(food);
+    showSection(drinks);
+    zobrazVyber(vyber);
+    skryjDetaily();
+    zobrazTop(topx);
+}
 
+// --------------- Košík ---------------
 
 
 function pridatDoKosiku(id) {
@@ -170,7 +182,6 @@ function pridatDoKosiku(id) {
         alert("Tuto položku již máte v košíku!!!");
     }
 }
-
 
 
 function pridavejKosik(id) {
@@ -208,7 +219,6 @@ function odstranPolozku(id) {
         cenaCelkem();
     }
 }
-
 
 function pridejPolozku(id) {
     let x = document.querySelector(`#kosik-${id}`);

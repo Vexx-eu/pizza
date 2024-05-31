@@ -11,7 +11,8 @@ let vse = document.getElementById("vse");
 let food = document.getElementById("food");
 let drinks = document.getElementById("drinks");
 
-let tlacitkaKoupit = document.querySelectorAll('.buy');
+
+let tlacitkaKoupit = document.querySelectorAll(".buy");
 let span = document.getElementById("span");
 
 let navKos = document.getElementById("iconka");
@@ -75,9 +76,7 @@ navKos.addEventListener("click", function() {
     ZobrazKosik(kosikx);
     hideSection(food);
     hideSection(drinks);
-    hideSection(jidlo);
-    hideSection(napoj);
-    hideSection(vse);
+    skryjVyber(vyber);
     skryjDetaily();
     skryjVyber(vyber);
     skryjTop(topx);
@@ -89,11 +88,8 @@ domu.addEventListener("click", function() {
     skryjKosik(kosikx);
     showSection(food);
     showSection(drinks);
-    showSection(jidlo);
-    showSection(napoj);
-    showSection(vse);
-    skryjDetaily();
     zobrazVyber(vyber);
+    skryjDetaily();
     zobrazTop(topx);
 });
 
@@ -101,11 +97,8 @@ menu.addEventListener("click", function() {
     skryjKosik(kosikx);
     showSection(food);
     showSection(drinks);
-    showSection(jidlo);
-    showSection(napoj);
-    showSection(vse);
-    skryjDetaily();
     zobrazVyber(vyber);
+    skryjDetaily();
     zobrazTop(topx);
 });
 
@@ -113,9 +106,6 @@ kontakt.addEventListener("click", function() {
     skryjKosik(kosikx);
     showSection(food);
     showSection(drinks);
-    showSection(jidlo);
-    showSection(napoj);
-    showSection(vse);
     skryjDetaily();
     zobrazVyber(vyber);
     zobrazTop(topx);
@@ -127,9 +117,6 @@ zaplat.addEventListener("click", function() {
     skryjKosik(kosikx);
     hideSection(food);
     hideSection(drinks);
-    hideSection(jidlo);
-    hideSection(napoj);
-    hideSection(vse);
     skryjDetaily();
     skryjVyber(vyber);
     skryjTop(topx);
@@ -138,6 +125,7 @@ zaplat.addEventListener("click", function() {
     zaplatitHidden(zaplat);
 
 });
+
 
 /*
  let data = {
